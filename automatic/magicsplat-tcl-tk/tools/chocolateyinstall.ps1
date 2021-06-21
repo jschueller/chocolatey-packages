@@ -10,7 +10,7 @@ $packageArgs = @{
   file64        = "$toolsDir\tcl-8.6.11-installer-1.11.2-x64.msi"
   filetype64    = 'MSI'
 
-  silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  silentArgs    = "ALLUSERS=1 APPLICATIONFOLDER=C:\Progra~1\Tcl /qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
 }
 
 Install-ChocolateyInstallPackage @packageArgs
