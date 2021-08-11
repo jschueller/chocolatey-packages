@@ -14,4 +14,4 @@ Get-ChocolateyUnzip @packageArgs
 $serviceName = "dnscrypt-proxy"
 
 Write-Warning "Start the dnscrypt-proxy service..."
-Start-Service "$serviceName" -WarningAction SilentlyContinue
+Start-Service "$serviceName" -ErrorAction SilentlyContinue
