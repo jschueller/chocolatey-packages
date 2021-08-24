@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'KLog'
   fileType      = 'exe'
-  file          = "$ToolsDir\KLog-1.8.1-windows-installer.exe"
+  file          = "$ToolsDir\KLog-1.8.3-windows-installer.exe"
   silentArgs    = "--mode unattended"
 }
 
