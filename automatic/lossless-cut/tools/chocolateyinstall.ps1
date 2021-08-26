@@ -12,8 +12,8 @@ If ($PackageParameters.InstallDir) {
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = "$installDir"
-  url            = 'https://github.com/mifi/lossless-cut/releases/download/v3.37.0/LosslessCut-win.zip'
-  checksum       = '75c9374059b813f24139d2596d1f08a1b1141c12491758b9b5f865c0d16d4d79'
+  url            = 'https://github.com/mifi/lossless-cut/releases/download/v3.38.0/LosslessCut-win.zip'
+  checksum       = '6680c5df00c4d7d4eb7dfe72341de67ad8ab6f44f5bd002b25d9bab971727fbd'
   checksumType   = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
