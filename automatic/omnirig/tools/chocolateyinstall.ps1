@@ -9,7 +9,7 @@ $packageArgs = @{
   fileType      = 'exe'
 
   url           = 'http://www.dxatlas.com/OmniRig/Files/OmniRig.zip'
-  checksum      = 'be0aba52bcbf6df1b3aa56b51cdeadfc7c955d844cf1cb5099218a1937c296d2'
+  checksum      = '46654ec3ba2fe9ff23a21edaa657c46e0e9867b62b254968a3c4436dd81531a8'
   checksumType  = 'sha256'
 
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'  
