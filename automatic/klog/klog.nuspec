@@ -14,7 +14,7 @@
     <!-- <copyright>Year Software Vendor</copyright> -->    
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>http://svn.sv.gnu.org/viewvc/?root=klog</projectSourceUrl>
+    <projectSourceUrl>https://github.com/ea4k/klog</projectSourceUrl>
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <mailingListUrl>https://www.klog.xyz/mailing-lists/</mailingListUrl>
     <!--<bugTrackerUrl>https://savannah.nongnu.org/bugs/?group=klog</bugTrackerUrl>-->
