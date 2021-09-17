@@ -14,7 +14,7 @@
     <licenseUrl>https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/COPYING?format=raw</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://sourceforge.net/p/ngspice/ngspice/ci/master/tree</projectSourceUrl>
-    <docsUrl>http://ngspice.sourceforge.net/docs.html</docsUrl>
+    <!--<docsUrl>http://ngspice.sourceforge.net/docs.html</docsUrl>-->
     <mailingListUrl>https://sourceforge.net/p/ngspice/mailman</mailingListUrl>
     <bugTrackerUrl>https://sourceforge.net/p/ngspice/_list/tickets</bugTrackerUrl>
     <tags>ngspice mixed-mode mixed level circuit simulator</tags>
