@@ -11,10 +11,10 @@
     <projectUrl>http://uvviewsoft.com/cudatext</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/cudatext/cudatext.png</iconUrl>
     <copyright>Copyright © UVviewsoft</copyright>
-    <licenseUrl>https://raw.githubusercontent.com/Alexey-T/CudaText/master/license.txt</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/Alexey-T/CudaText/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Alexey-T/CudaText</projectSourceUrl>
-    <docsUrl>https://wiki.freepascal.org/CudaText</docsUrl>
+    <!--<docsUrl>https://wiki.freepascal.org/CudaText</docsUrl>-->
     <!--<mailingListUrl>http://synwrite.sourceforge.net/forums</mailingListUrl>-->
     <bugTrackerUrl>https://github.com/alexey-t/cudatext/issues</bugTrackerUrl>
     <tags>cudatext cross-platform code editor</tags>
