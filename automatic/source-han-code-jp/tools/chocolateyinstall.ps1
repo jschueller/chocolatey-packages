@@ -10,8 +10,8 @@ $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     unzipLocation  = $tempPath    
 
-    url            = 'https://github.com/adobe-fonts/source-han-code-jp/archive/2.012.zip'
-    checksum       = '08a30d02c24dbd6f7974fdf23b8acb6b7768b0722ad1fea2b1b2fd037def964e'
+    url            = 'https://github.com/adobe-fonts/source-han-code-jp/archive/2.012R.zip'
+    checksum       = 'BEDC74973220F1CE4BB16E1FA64A46604C3164BF95B62FA48C8A046DD468D6EF'
     checksumType   = 'sha256'
 }
  
