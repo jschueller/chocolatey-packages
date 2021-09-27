@@ -2,7 +2,7 @@
 refreshenv
 ridk install 3
 gem install bundler
-gem install jekyll -v 4.2.0
+gem install jekyll -v 4.2.1
 
 Write-Warning @'
 ###    Jekyll - QUICKSTART    ###
