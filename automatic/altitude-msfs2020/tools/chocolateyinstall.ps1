@@ -6,7 +6,7 @@ $packageArgs = @{
   destination   = "$toolsDir"
 
   url           = 'https://api.ivao.aero/v2/softwares/altitude/5/files/latest/download'
-  checksum      = '0c66a16eb4b28af7e7886ecdda7941898c269d5c745412fa34e57dbc2665177c'
+  checksum      = '86087e5c1eaa89461f73d42422360933f613b76262e91b485cd4dda7ca961d86'
   checksumType  = 'sha256'
 
   silentArgs    = '/S'

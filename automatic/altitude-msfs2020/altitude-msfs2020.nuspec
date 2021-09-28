@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>altitude-msfs2020</id>
-    <version>1.10.4-beta</version>
+    <version>1.10.5-beta</version>
     <title>Altitude for Microsoft Flight Simulator 2020 (MSFS2020)</title>
     <authors>International Virtual Aviation Organisation.</authors>
     <owners>chtof</owners>
