@@ -14,8 +14,8 @@ $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     unzipLocation  = $toolsDir
 
-    url            = 'https://github.com/liberationfonts/liberation-fonts/files/6418984/liberation-fonts-ttf-2.1.4.tar.gz'
-    checksum       = '26f85412dd0aa9d061504a1cc8aaf0aa12a70710e8d47d8b65a1251757c1a5ef'
+    url            = 'https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz'
+    checksum       = '7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0'
     checksumType   = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
