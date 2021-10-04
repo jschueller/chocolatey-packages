@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>offset-explorer</id>
-    <version>2.1</version>
+    <version>2.2</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/offset-explorer</packageSourceUrl>
     <owners>chtof</owners>
     <title>Offset Explorer (Formerly Kafka Tool)</title>
@@ -19,8 +19,7 @@
     <bugTrackerUrl>http://www.kafkatool.com/contact.html</bugTrackerUrl>
     <tags>kafka-tool kafka tool offset explorer offset-explorer</tags>
     <summary>The Ultimate UI Tool for Kafka.</summary>
-    <description><![CDATA[## Features
-### Kafka Browser
+    <description><![CDATA[### Kafka Browser
 The browser tree in Offset Explorer allows you to view and navigate the objects in your Apache Kafka® cluster -- brokers, topics, partitions, consumers -- with a couple of mouse-clicks. Connections to your Kafka cluster are persisted so you don't need to memorize or enter them every time. You can quickly view information about all your clusters no matter how many you have.
 
 
