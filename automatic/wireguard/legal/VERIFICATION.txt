@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://download.wireguard.com/windows-client/wireguard-x86-0.5.msi
-   x64: https://download.wireguard.com/windows-client/wireguard-amd64-0.5.msi
+   x32: https://download.wireguard.com/windows-client/wireguard-x86-0.5.1.msi
+   x64: https://download.wireguard.com/windows-client/wireguard-amd64-0.5.1.msi
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 69AD07B59C0E5AAF14680B400F2AA1B5FD23847FE83F6D94ECDAEAE973C81CB4
-   checksum64: 69A15FCFEED20AD9FCE2DC9A3B893C0606B00FA078315D5898508430F4A5DED1
+   checksum32: DBE184488F989910586003CDB4A97AE4BADE0715ECBD3A9C56A81A23E9F57A1D
+   checksum64: 2672E92F638EAA34EE926967B4214EF19B78F46B5831CB486B744BDEF4340536
  
 File 'LICENSE.txt' is obtained from:
    https://git.zx2c4.com/WireGuard/about/COPYING
