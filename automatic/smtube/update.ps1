@@ -6,7 +6,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
     $releases = 'http://www.smtube.org/'
-    $regex32    = 'smtube-([\d\.]+)-win32.exe$'
+    $regex32    = 'smtube-([\d\.]+)-win32.*.exe$'    
     $regex64    = 'smtube-(?<Version>[\d\.]+)-x64.exe$'
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
