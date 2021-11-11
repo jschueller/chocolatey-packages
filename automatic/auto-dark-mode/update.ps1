@@ -6,7 +6,9 @@ function global:au_GetLatest {
     $github_repository = 'Armin2208/Windows-Auto-Night-Mode'
     $releases = 'https://github.com/' + $github_repository + '/releases/latest'
     #$regexVersion = 'Armin2208/Windows-Auto-Night-Mode/tree/(?<Version>[\d\.]+)'
-    $regexVersion = 'Auto Dark Mode ?(Version) (?<Version>[\d\.]+)'
+    #$regexVersion = 'Auto Dark Mode ?(Version) (?<Version>[\d\.]+)'
+    $regexVersion = '/AutoDarkMode/Windows-Auto-Night-Mode/releases/tag/(?<Version>[\d\.]+)'
+    #/AutoDarkMode/Windows-Auto-Night-Mode/releases/tag/10.0.1.76
     #$regexUrl = '/.*AutoDarkMode.*\.zip'
     $regexUrl = '/.*AutoDarkMode.*\.exe'
 
