@@ -16,7 +16,7 @@ function global:au_GetLatest {
     $version = $matches.Version -Replace '_','.'
 
     if ($matches.VersionLetter) {
-        $version = $version + '.' + ( [int][char]$matches.VersionLetter - 96 ) + '00'
+        $version = $version + '.' + ( [int][char]$matches.VersionLetter.toLower() - 96 ) + '00'
     }
 
     # When the fourth segment is already used, it is recommended to add two zeroes (00) to the end of the version. Then when you need to fix, you just increment that number.
