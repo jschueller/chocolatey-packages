@@ -5,7 +5,8 @@ $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   filetype    = "MSI"
   file64      = "$toolsDir\embree-3.13.2.x64.vc14.msi"
-  silentArgs  = "/qn /norestart /l*v `"$env:TEMP\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  #silentArgs  = "/qn /norestart /l*v `"$env:TEMP\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  silentArgs  = '/q'
 }
 
 Install-ChocolateyInstallPackage @packageArgs
