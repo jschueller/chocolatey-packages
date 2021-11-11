@@ -11,9 +11,9 @@
     <projectUrl>https://jami.net</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/jami/jami.png</iconUrl>
     <copyright>Savoir-Faire LINUX © 2019</copyright>
-    <licenseUrl>https://git.ring.cx/savoirfairelinux/ring-client-windows/blob/master/License.rtf</licenseUrl>
+    <licenseUrl>https://git.jami.net/savoirfairelinux/jami-client-qt/-/raw/master/License.rtf</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://git.ring.cx/explore</projectSourceUrl>
+    <projectSourceUrl>https://git.jami.net/savoirfairelinux/jami-project/</projectSourceUrl>
     <docsUrl>https://jami.net/help</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://git.jami.net/groups/savoirfairelinux/-/issues</bugTrackerUrl>
