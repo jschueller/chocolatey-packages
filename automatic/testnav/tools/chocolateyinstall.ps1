@@ -4,8 +4,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   filetype      = 'MSI'
 
-  url           = 'https://download.testnav.com/_testnavinstallers/testnav-1.9.7.msi'
-  checksum      = '9bf198d2cc96444c483c56dc6b1ab98f2a94ba7bd2a99f89e59918198ed52ebc'
+  url           = 'https://download.testnav.com/_testnavinstallers/testnav-1.10.2.msi'
+  checksum      = '03aa6911a31e79496cb478a73aeefc241e17a5c9b8ef71bfda2c2a4b40d69be4'
   checksumType  = 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
