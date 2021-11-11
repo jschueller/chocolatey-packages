@@ -7,13 +7,14 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
     $releases = 'https://github.com/UB-Mannheim/tesseract/wiki'
-    $regex32  = 'tesseract-ocr-w32-setup-v([\d\.-]+(-alpha)?([\d\.]+)?).exe'
-    $regex64  = 'tesseract-ocr-w64-setup-v(?<Version>[\d\.]+(-alpha)?([\d\.]+)?).exe'    
+    $regex32  = 'tesseract-ocr-w32-setup-v([\d\.-]+(-alpha|-rc)?([\d\.]+)?).exe'
+    $regex64  = 'tesseract-ocr-w64-setup-v(?<Version>[\d\.]+(-alpha|-rc)?([\d\.]+)?).exe'    
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$url32         = $download_page.links | ? href -match $regex32
     $url64         = $download_page.links | ? href -match $regex64
     $version       = $matches.Version -Replace "([\d\.]+)(-alpha)([\d\.]+)", '$1$3$2'
+    $version       = $matches.Version -Replace "([\d\.]+)(-rc)([\d\.]+)", '$1$3'
 
     return @{
         Version = $version
