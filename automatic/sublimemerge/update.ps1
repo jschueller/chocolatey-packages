@@ -1,7 +1,7 @@
 ﻿import-module au
 
 function global:au_GetLatest {
-    $releases = 'https://www.sublimemerge.com/download'
+    $releases = 'https://www.sublimemerge.com/download_thanks?target=win-x64'
     $regex = "https://download.sublimetext.com/sublime_merge_build_(?<Version>[\d]+)_x64_setup.exe"
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing	 
@@ -9,17 +9,17 @@ function global:au_GetLatest {
 
     return @{
        Version = "0.0." + $matches.Version
-       URL32 = $url.href
+       URL64 = $url.href
     }
 }
 
 function global:au_SearchReplace {
     @{
         "tools\chocolateyinstall.ps1" = @{
-			"(^(\s)*url\s*=\s*)('.*')" = "`$1'$($Latest.URL32)'"
-            "(^(\s)*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+			"(^(\s)*url64\s*=\s*)('.*')" = "`$1'$($Latest.URL32)'"
+            "(^(\s)*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
     }
 }
 
-update
+update -ChecksumFor 64
