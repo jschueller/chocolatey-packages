@@ -14,7 +14,7 @@
     <licenseUrl>https://raw.githubusercontent.com/embree/embree/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/embree/embree</projectSourceUrl>
-    <docsUrl>https://www.embree.org/tutorials.html</docsUrl>
+    <!--<docsUrl>https://www.embree.org/tutorials.html</docsUrl>-->
     <mailingListUrl>https://groups.google.com/d/forum/embree</mailingListUrl>
     <bugTrackerUrl>https://github.com/embree/embree/issues</bugTrackerUrl>
     <tags>embree.install high performance ray tracing kernel intel corporation</tags>
