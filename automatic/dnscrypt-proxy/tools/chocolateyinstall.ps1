@@ -9,3 +9,9 @@ $packageArgs = @{
 }
 
 Get-ChocolateyUnzip @packageArgs
+
+# Start service after upgrade
+$serviceName = "dnscrypt-proxy"
+
+Write-Warning "Start the dnscrypt-proxy service..."
+Start-Service "$serviceName" -ErrorAction SilentlyContinue
