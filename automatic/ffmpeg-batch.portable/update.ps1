@@ -6,16 +6,18 @@ import-module au
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $releases = 'https://sourceforge.net/projects/ffmpeg-batch/files/'
-    $regex   = 'FFmpeg_Batch_(?<Version>[\d\.]+)_Portable_x64.zip'
+    $releases = 'https://sourceforge.net/projects/ffmpeg-batch/files/'    
+    $regex32 = 'FFbatch_AV_Converter_Portable_[\d.]+_32bit.exe'    
+    $regex64 = 'FFbatch_AV_Converter_Portable_(?<Version>[\d.]+)_64bit.exe'
 
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $url = $download_page.links | ? href -match $regex | Select -First 1
+    $download_page_links = (Invoke-WebRequest -Uri $releases -UseBasicParsing).links
+    $url32 = ($download_page_links | ? href -match $regex32 | Select -First 1).href
+    $url64 = ($download_page_links | ? href -match $regex64 | Select -First 1).href
 
     return @{
         Version = $matches.Version
-        URL32 = Get-RedirectedUrl ('https://downloads.sourceforge.net/project/ffmpeg-batch/FFmpeg_Batch_' + $matches.Version + '_Portable_x86.zip')        
-        URL64 = Get-RedirectedUrl ('https://downloads.sourceforge.net/project/ffmpeg-batch/FFmpeg_Batch_' + $matches.Version + '_Portable_x64.zip')
+        URL32 = Get-RedirectedUrl ( $url32 )
+        URL64 = Get-RedirectedUrl ( $url64 )
     }
 }
 
