@@ -4,16 +4,22 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file        = "$toolsDir\FFmpeg_Batch_2.4.0_Portable_x86.zip"
-  file64      = "$toolsDir\FFmpeg_Batch_2.4.0_Portable_x64.zip"
+  file        = "$toolsDir\FFbatch_AV_Converter_Portable_2.5.4_32bit.exe"
+  file64      = "$toolsDir\FFBatch_AV_Converter_Portable_2.5.4_64bit.exe"
+  silentArgs  = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 }
 
-Get-ChocolateyUnzip @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
+Stop-Process -Name FFBatch
+Remove-Item "$toolsDir\FFbatch_AV_Converter_Portable_.*bit.exe" | Out-Null
 
+Write-Warning "ffmpeg-batch.portable is installed in ${env:USERPROFILE}\Documents\FFmpeg Batch AV Converter"
+<#
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
 if (Get-OSArchitectureWidth -Compare '64') { $arch = '_x64' } else { $arch = '' }
 
-$shortcutFilePath = Join-Path $programs 'FFmpeg Batch Portable.lnk'
-$targetPath = Join-Path $toolsDir "FFmpeg_Batch_2.4.0_Portable${arch}.exe"
+$shortcutFilePath = Join-Path "$programs" 'FFmpeg Batch Portable.lnk'
+$targetPath = Join-Path "$toolsDir" "FFmpeg_Batch_2.5.4_Portable${arch}.exe"
 Install-ChocolateyShortcut -RunAsAdmin -shortcutFilePath "$shortcutFilePath" -targetPath "$targetPath"
+#>
