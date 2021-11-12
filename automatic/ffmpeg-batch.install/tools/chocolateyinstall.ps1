@@ -3,8 +3,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
-  file        = "$toolsDir\FFbatch_setup_2.4.0_x86.exe"
-  file64      = "$toolsDir\FFbatch_setup_2.4.0_x64.exe"
+  file        = "$toolsDir\FFBatch_AV_Converter_2.5.4_32bit.exe"
+  file64      = "$toolsDir\FFBatch_AV_Converter_2.5.4_64bit.exe"
   silentArgs  = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 }
 
