@@ -7,15 +7,17 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
     $releases = 'https://sourceforge.net/projects/ffmpeg-batch/files/'
-    $regex   = 'FFbatch_setup_(?<Version>[\d\.]+)_x64.exe'
+    $regex64 = 'FFBatch_AV_Converter_(?<Version>[\d.]+)_64bit.exe'
+    $regex32 = 'FFBatch_AV_Converter_[\d.]+_32bit.exe'
 
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url = $download_page.links | ? href -match $regex | Select -First 1
+    $download_page_links = (Invoke-WebRequest -Uri $releases -UseBasicParsing).links
+    $url32 = ($download_page_links | ? href -match $regex32 | Select -First 1).href
+	$url64 = ($download_page_links | ? href -match $regex64 | Select -First 1).href
 
     return @{
         Version = $matches.Version
-        URL32 = Get-RedirectedUrl ('https://downloads.sourceforge.net/project/ffmpeg-batch/FFbatch_setup_' + $matches.Version + '_x86.exe')
-        URL64 = Get-RedirectedUrl ('https://downloads.sourceforge.net/project/ffmpeg-batch/FFbatch_setup_' + $matches.Version + '_x64.exe')
+        URL32 = Get-RedirectedUrl ( $url32 )
+        URL64 = Get-RedirectedUrl ( $url64 )
     }
 }
 
