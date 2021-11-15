@@ -1,5 +1,8 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+
+# Remove previous version
+Get-ChildItem -Directory -Path $toolsDir -Filter Launchy* | Remove-Item -Force -Recurse
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -7,7 +10,14 @@ $packageArgs = @{
   file          = "$toolsDir\Launchy-3.1.2-win-x86.7z"
 }
 
+foreach ($file in 'python.exe', 'pythonw.exe') {
+  New-Item -path $toolsDir\Launchy -name "$file.ignore" -type File -force | Out-Null
+}
+
 Get-ChocolateyUnzip @packageArgs
+Remove-Item $packageArgs.file | Out-Null
+
+$launchy_Exe = (Get-ChildItem -Recurse Launchy.exe )
 
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
