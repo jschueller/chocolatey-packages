@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>  
     <id>agwmultiactivites.portable</id>    
-    <version>1.2.5</version>    
+    <version>1.2.7</version>    
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/agwmultiactivites.portable</packageSourceUrl>    
     <owners>chtof</owners>    
     <title>AGW Multi-Activités (Portable)</title>
@@ -19,8 +19,7 @@
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>agwmultiactivites.portable french multi activity activities HAM radio amateur</tags>
     <summary>Logging program to manage HAM (radio amateurs) awards.</summary>
-    <description><![CDATA[
-## Supported awards
+    <description><![CDATA[## Supported awards
 - Awards: DAF DCF DCPF DDFM DFCF DFF DIFI DIFM DLF DMF DOHF DPF DPLF DVFF DYLF PC FFF TDC WLF.
 - Challenges: DFCF DMF.
 
