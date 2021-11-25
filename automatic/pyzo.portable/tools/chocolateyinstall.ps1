@@ -4,8 +4,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file32      = "$toolsDir\pyzo-4.11.2-win32.zip"
-  file64      = "$toolsDir\pyzo-4.11.2-win64.zip"
+  file32      = "$toolsDir\pyzo-4.11.4-win32.zip"
+  file64      = "$toolsDir\pyzo-4.11.4-win64.zip"
 }
 
 Get-ChocolateyUnzip @packageArgs
@@ -14,5 +14,5 @@ Remove-Item -Path $packageArgs.file64
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
 $shortcutFilePath = Join-Path $programs "Pyzo.lnk"
-$targetPath = Join-Path $toolsDir "pyzo-4.11.2\pyzo.exe"
+$targetPath = Join-Path $toolsDir "pyzo-4.11.4\pyzo.exe"
 Install-ChocolateyShortcut -shortcutFilePath $shortcutFilePath -targetPath $targetPath
