@@ -1,15 +1,15 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-function global:au_GetLatest {
-    $releases = 'https://steelseries.com/engine'
-    $regex   = '>Download Engine (?<Version>[\d\.]+)\ ?<'
+function global:au_GetLatest {        
+    $regex = 'SteelSeriesGG(?<Version>[\d\.]+)Setup.exe'
+    $redirectedUrl = Get-RedirectedUrl https://steelseries.com/gg/downloads/gg/latest/windows
 
-    (Invoke-WebRequest -Uri $releases -UseBasicParsing) -match $regex
+    $redirectedUrl -match $regex | Out-Null
 
     return @{
         Version = $matches.version
-        URL32 = 'https://engine.steelseriescdn.com/SteelSeriesEngine' + $matches.Version + 'Setup.exe'
+        URL32 = $redirectedUrl
     }
 }
 
