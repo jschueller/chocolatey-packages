@@ -4,7 +4,7 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file        = "$toolsDir\CarotDAV1.15.10.portable.zip"  
+  file        = "$toolsDir\CarotDAV1.16.0.portable.zip"  
 }
 
 Get-ChocolateyUnzip @packageArgs
