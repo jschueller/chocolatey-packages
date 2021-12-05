@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: http://rei.to/CarotDAV1.16.0.zip
-   x64: http://rei.to/CarotDAV1.16.0.zip
+   x32: http://rei.to/CarotDAV1.16.1.zip
+   x64: http://rei.to/CarotDAV1.16.1.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 54C2AFADBFF20BE631E5582DF8CC263304441F783B182EFFCA54B801DBA018CF
-   checksum64: 54C2AFADBFF20BE631E5582DF8CC263304441F783B182EFFCA54B801DBA018CF
+   checksum32: EBE888C3562D5319B6655854C433CE27C8E72CDADF6D660D2960BACAA3BA497C
+   checksum64: EBE888C3562D5319B6655854C433CE27C8E72CDADF6D660D2960BACAA3BA497C
  
 File 'LICENSE.txt' is obtained from:
    http://rei.to/carotdav_en.html#license
