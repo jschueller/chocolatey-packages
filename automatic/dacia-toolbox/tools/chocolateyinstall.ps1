@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
-  url          = 'http://cdns.distrib.naviextras.com/content/!application/TOOLBOX/Agents/ReDa_ULC_4/2019_12_03_16_20/Dacia/DaciaMediaNavEvolutionToolbox-inst.exe'
-  checksum     = 'fc727ec3bfc3731ca6a6dfd4d705a17df2fdf59ab1b7e4ff65f797e311b0327a'
+  url          = 'https://cdns.distrib.naviextras.com/content/!application/TOOLBOX/Agents/ReDa_ULC_4/2021_12_07_16_52/Dacia/DaciaMediaNavEvolutionToolbox-inst.exe'
+  checksum     = 'e2861a739d9d026838ce283350baf5cc2349192b04aafabc37701d5fac707fe3'
   checksumType = 'sha256'
 
   silentArgs   = "/S"
