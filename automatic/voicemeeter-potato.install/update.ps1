@@ -5,11 +5,17 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
   $releases      = 'https://vb-audio.com/Voicemeeter/potato.htm'  
   $regex_version = 'Voicemeeter (?<Version>[\d\.]+).*\(EXE file\)'
+  $regex_filename = '(?<Filename>Voicemeeter\d*Setup.exe)'
 
   $download_page = (Invoke-WebRequest -Uri $releases)
-  $download_page.RawContent -match $regex_version
+
+  $download_page.RawContent -match $regex_filename | Out-Null
+  $filename = $matches.Filename
+
+  $download_page.RawContent -match $regex_version | Out-Null
   
-  return @{ Version = $matches.Version ; URL32 = 'https://download.vb-audio.com/Download_CABLE/Voicemeeter8Setup.exe' }
+  
+  return @{ Version = $matches.Version ; URL32 = 'https://download.vb-audio.com/Download_CABLE/' + $filename }
 }
 
 function global:au_SearchReplace {
