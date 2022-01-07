@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file        = "$toolsDir\Voicemeeter8Setup_v3014.zip"
+  file        = "$toolsDir\Voicemeeter8Setup_v3021.zip"
 }
 
 Get-ChocolateyUnzip @packageArgs

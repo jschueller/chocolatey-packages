@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>voicemeeter-potato.portable</id>
-    <version>3.0.1.400</version>
+    <version>3.0.2.1</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/voicemeeter-potato.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>Voicemeeter Potato Ultimate Mixer (Portable)</title>
@@ -19,8 +19,7 @@
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>voicemeeter potato ultimate audio mixer application</tags>
     <summary>Voicemeeter Potato is the ultimate version of our Audio Mixer Application endowed with Virtual Audio Device to mix and manage any audio sources from or to any audio devices or applications.</summary>
-    <description><![CDATA[!
-__Voicemeeter Potato__, The Ultimate Virtual Audio Device Mixer For Windows !
+    <description><![CDATA[__Voicemeeter Potato__, The Ultimate Virtual Audio Device Mixer For Windows !
 
 ## Licensing
 Voicemeeter Potato is distributed as Donationware with an activation code! Free to use, after 30 days period, it will periodically invite you to activate your license.
