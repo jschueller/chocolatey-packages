@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w32-setup-v5.0.0-rc1.20211030.exe
-   x64: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.0-rc1.20211030.exe
+   x32: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w32-setup-v5.0.1.20220107.exe
+   x64: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.1.20220107.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 8F83C5C55FEBC9B0EA840BB9408254A69504742A724FD86C752179353FD1FEE4
-   checksum64: 8177499DB5AEDC350C0E94D8B1071373AAA04FB4ECEF64C5D9C9AD8168769075
+   checksum32: 6B39FCB2B1E8FCBDF35D76DBA672561C2CE3E587BEE14C1482A4FB932CC50BDB
+   checksum64: 1C8D70210F88192EEDD06A42602F79AF0F0D764C81E8EC982214B54A1B41D018
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/tesseract-ocr/tesseract/master/LICENSE
