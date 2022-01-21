@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$toolsDir" 
 
-  url           = 'https://www.ne.jp/asahi/foresth/home/spdf350.zip'
-  checksum      = '424681b619b6e048ae9fd8abde4a2afcb424b023c88c1b337a37b5dc5332943a'
+  url           = 'https://www.ne.jp/asahi/foresth/home/spdf351.zip'
+  checksum      = '04d8c2c34a8a076d172e762ac34f8cfb2844e97abbb0b50b7c6edfc4ba509a93'
   checksumType  = 'sha256'
 }
 
