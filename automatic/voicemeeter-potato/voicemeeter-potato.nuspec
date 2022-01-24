@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>voicemeeter-potato</id>
-    <version>3.0.2.1</version>
+    <version>3.0.2.2</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/voicemeeter-potato</packageSourceUrl>
     <owners>chtof</owners>
     <title>Voicemeeter Potato Ultimate Mixer</title>
@@ -32,7 +32,7 @@ For any professional use, you may pay the recommended license price on the websh
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
   <dependencies>
-    <dependency id="voicemeeter-potato.install" version="[3.0.2.1]" />
+    <dependency id="voicemeeter-potato.install" version="[3.0.2.2]" />
   </dependencies>
   </metadata>
    <files></files>
