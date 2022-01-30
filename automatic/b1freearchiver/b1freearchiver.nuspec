@@ -57,7 +57,7 @@ With encryption you can protect data with 256 bit AES encryption algorithm. No o
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/b1freearchiver</packageSourceUrl>
     <bugTrackerUrl>https://b1.org/support.jsp</bugTrackerUrl>
     <dependencies>
-      <dependency id="autohotkey.install" version="1.1.30.03" />
+      <dependency id="autohotkey.portable" version="1.1.30.03" />
     </dependencies>
   </metadata>
   <files>

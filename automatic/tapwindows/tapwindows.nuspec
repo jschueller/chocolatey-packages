@@ -24,7 +24,7 @@ NDIS 6.20 implementation of the TAP-Windows driver, used by OpenVPN and other ap
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
-      <dependency id="autohotkey.install" version="1.1.30.01" />
+      <dependency id="autohotkey.portable" version="1.1.30.01" />
     </dependencies>
   </metadata>
   <files>
