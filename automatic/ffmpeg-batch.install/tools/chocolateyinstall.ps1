@@ -10,3 +10,4 @@ $packageArgs = @{
 
 Install-ChocolateyInstallPackage @packageArgs
 Stop-Process -Name FFBatch
+Remove-Item -Path "$toolsDir\*.exe" -ErrorAction SilentlyContinue

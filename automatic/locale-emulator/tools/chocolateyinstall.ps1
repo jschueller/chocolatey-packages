@@ -4,7 +4,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$toolsDir"
-  file          = "$toolsDir\Locale.Emulator.2.5.0.1\LEInstaller.exe"
+  #file          = "$toolsDir\Locale.Emulator.2.5.0.1\LEInstaller.exe"
+  file          = "$toolsDir\LEInstaller.exe"
 
   url           = 'https://github.com/xupefei/Locale-Emulator/releases/download/v2.5.0.1/Locale.Emulator.2.5.0.1.zip'
   checksum      = '808ff584426d52cc775ad6406da00622f454be95bd4c8fbca42eef4b7235ad5c'
