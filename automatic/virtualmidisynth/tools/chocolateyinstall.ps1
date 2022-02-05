@@ -8,3 +8,4 @@ $packageArgs = @{
 }
 
 Install-ChocolateyInstallPackage @packageArgs
+Remove-Item -Path "$toolsDir\*.exe" -ErrorAction SilentlyContinue
