@@ -5,6 +5,10 @@ function global:au_GetLatest {
     $regex    = 'Version: (?<Version>[\d\.]+)'
     
     (Invoke-WebRequest -Uri $releases) -match $regex | Out-Null
+    $version = $matches.version
+    If ($version -notlike '*.*') {
+        $version = $version + '.0'
+    }
     
     return @{
         Version = $matches.version
