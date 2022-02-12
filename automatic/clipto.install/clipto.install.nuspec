@@ -41,7 +41,7 @@ See https://clipto.pro for details.
 ]]></description>
     <releaseNotes>https://github.com/clipto-pro/Desktop/releases</releaseNotes>
     <dependencies>
-      <dependency id="autohotkey.install" version="1.1.32" />
+      <dependency id="autohotkey.portable" version="1.1.32" />
     </dependencies>
   </metadata>
   <files>

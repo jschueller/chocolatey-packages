@@ -57,7 +57,7 @@ over 250 and ever increasing community plugins Here
 ]]></description>
   <releaseNotes>https://github.com/NatronGitHub/Natron/releases</releaseNotes>
   <dependencies>
-    <dependency id="autohotkey.install" version="1.1.30.03" />
+    <dependency id="autohotkey.portable" version="1.1.30.03" />
   </dependencies>
   </metadata>
   <files>

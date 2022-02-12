@@ -64,7 +64,7 @@ Send and receive digital games and in-game items right from the Battle.net app.
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
-      <dependency id="autohotkey.install" version="1.1.30.03" />
+      <dependency id="autohotkey.portable" version="1.1.30.03" />
     </dependencies>
   </metadata>
   <files>

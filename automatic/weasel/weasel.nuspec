@@ -24,7 +24,7 @@ Open source technology based on Zhongzhou rhyme input method engine/Rime Input M
 ]]></description>
     <releaseNotes>https://github.com/rime/weasel/releases</releaseNotes>
     <dependencies>
-     <dependency id="autohotkey.install" version="1.1.30.03" />
+     <dependency id="autohotkey.portable" version="1.1.30.03" />
     </dependencies>
   </metadata>
   <files>

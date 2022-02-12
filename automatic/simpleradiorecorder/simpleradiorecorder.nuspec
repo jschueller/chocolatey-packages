@@ -43,7 +43,7 @@ _** Minimum hardware installation may be required to begin recording of the soun
 ![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/simpleradiorecorder/screenshot.png)
 ]]></description>
     <dependencies>
-      <dependency id="autohotkey.install" version="1.1.30" />
+      <dependency id="autohotkey.portable" version="1.1.30" />
     </dependencies>
   </metadata>
   <files>

@@ -29,7 +29,7 @@ The program will show you what you are keying, mark and space, dots and dashes. 
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
-      <dependency id="autohotkey.install" version="1.1.32" />
+      <dependency id="autohotkey.portable" version="1.1.32" />
     </dependencies>
   </metadata>
   <files>

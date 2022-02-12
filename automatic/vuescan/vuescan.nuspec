@@ -102,7 +102,7 @@ Since 1998, VueScan has saved hundreds of thousands scanners from ending up in t
 ]]></description>
     <releaseNotes>https://www.hamrick.com/vuescan/vuescan.htm</releaseNotes>
     <dependencies>
-      <dependency id="autohotkey.install" version="1.1.30.03" />
+      <dependency id="autohotkey.portable" version="1.1.30.03" />
     </dependencies>
   </metadata>
   <files>

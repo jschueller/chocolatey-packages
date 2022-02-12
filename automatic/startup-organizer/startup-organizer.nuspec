@@ -44,7 +44,7 @@ You can also define the **order** in which to run your programs and even set a *
 ]]></description>
     <releaseNotes>https://metaproducts.com/news</releaseNotes>
     <dependencies>
-      <dependency id="autohotkey.install" version="1.1.30.03" />
+      <dependency id="autohotkey.portable" version="1.1.30.03" />
     </dependencies>
   </metadata>
   <files>
