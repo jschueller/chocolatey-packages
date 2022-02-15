@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>glow</id>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/glow</packageSourceUrl>
     <owners>chtof</owners>
     <title>Glow</title>
@@ -19,8 +19,7 @@
     <bugTrackerUrl>https://github.com/charmbracelet/glow/issues</bugTrackerUrl>
     <tags>glow terminal markdown</tags>
     <summary>Glow is a terminal based markdown reader designed from the ground up to bring out the beauty—and power—of the CLI.</summary>
-    <description><![CDATA[
-Glow is a terminal based markdown reader designed from the ground up to bring out the beauty—and power—of the CLI.
+    <description><![CDATA[Glow is a terminal based markdown reader designed from the ground up to bring out the beauty�and power�of the CLI.
 
 Use it to discover markdown files, read documentation directly on the command line and stash markdown files to your own private collection so you can read them anywhere. Glow will find local markdown files in subdirectories or a local Git repository.
 
