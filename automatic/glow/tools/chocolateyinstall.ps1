@@ -10,3 +10,4 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 Remove-Item -Path $packageArgs.file
+Remove-Item -Path $packageArgs.file64
