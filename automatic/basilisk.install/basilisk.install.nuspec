@@ -11,12 +11,12 @@
     <projectUrl>https://basilisk-browser.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/basilisk.install/basilisk.install.png</iconUrl>
     <copyright>Copyright ©2017-2019 M.C. Straver. All rights reserved.</copyright>
-    <licenseUrl>https://raw.githubusercontent.com/MoonchildProductions/UXP/master/toolkit/content/license.html</licenseUrl>
+    <!-- <licenseUrl>https://raw.githubusercontent.com/MoonchildProductions/UXP/master/toolkit/content/license.html</licenseUrl> -->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/MoonchildProductions/UXP</projectSourceUrl>
+    <projectSourceUrl>http://archive.palemoon.org/source/</projectSourceUrl>
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
-    <bugTrackerUrl>https://github.com/MoonchildProductions/UXP/issues</bugTrackerUrl>
+    <!-- <bugTrackerUrl>https://github.com/MoonchildProductions/UXP/issues</bugTrackerUrl> -->
     <tags>basilisk.install XUL browser unified platform uxp</tags>
     <summary>A XUL-based web-browser demonstrating the Unified XUL Platform (UXP).</summary>
     <description><![CDATA[*A XUL-based web-browser demonstrating the Unified XUL Platform (UXP). This browser is a close twin to pre-Servo Firefox in how it operates.*
