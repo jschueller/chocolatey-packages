@@ -38,7 +38,7 @@ Elsie™ is an uncommon commercial-grade lumped-element ("L-C") electrical filte
 ]]></description>
   <releaseNotes>http://tonnesoftware.com/elsie.html</releaseNotes>
   <dependencies>
-    <dependency id="autohotkey.install" version="1.1.30.03" />
+    <dependency id="autohotkey.portable" version="1.1.30.03" />
   </dependencies>
   </metadata> 
   <files>
