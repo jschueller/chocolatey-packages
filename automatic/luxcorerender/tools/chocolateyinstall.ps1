@@ -3,11 +3,11 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
-  destination = "$toolsDir"
-  file64      = "$toolsDir\luxcorerender-v2.5-win64.zip"
+  checksum64  = "$toolsDir"
+  url64       = "$toolsDir\luxcorerender-v2.5-win64.zip"
 }
 
-Get-ChocolateyUnzip @packageArgs
+Install-ChocolateyZipPackage @packageArgs
 
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
