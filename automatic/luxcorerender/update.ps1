@@ -15,21 +15,17 @@ function global:au_GetLatest {
 
 function global:au_SearchReplace {
     @{
-       "legal\VERIFICATION.txt"  = @{
-            "(?i)(x64: ).*"             = "`${1}$($Latest.URL64)"
-            "(?i)(checksum type:\s+).*" = "`${1}$($Latest.ChecksumType64)"
-            "(?i)(checksum64:).*"       = "`${1} $($Latest.Checksum64)"
-        }
-
         "tools\chocolateyinstall.ps1" = @{
-          "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\)(.*)`""   = "`${1}$($Latest.FileName64)`""          
-          "(Join-Path [$]toolsDir `"luxcorerender-v)[\d\.]+(-win64\\luxcoreui.exe`")" = "`${1}$($Latest.Version)`${2}"
-        }
+            "(^(\s)*url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+            "(^(\s)*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+            "(Join-Path [$]toolsDir `"luxcorerender-v)[\d\.]+(-win64\\luxcoreui.exe`")" = "`${1}$($Latest.Version)`${2}"
+        }        
     }
 }
 
+
 try {
-    update -ChecksumFor none
+    update -ChecksumFor 64
 } catch {
     $ignore = 'The request was aborted: Could not create SSL/TLS secure channel.'
     if ($_ -match $ignore) { Write-Host $ignore; 'ignore' }  else { throw $_ }
