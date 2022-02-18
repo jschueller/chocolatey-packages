@@ -5,17 +5,17 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
     # $releases = 'http://ntinfo.biz/index.html'
     $releases = 'https://github.com/horsicq/DIE-engine/releases/latest'
-    $regex32   = 'die_win32_portable_(?<Version>[\d\.]+).zip$'
-    $regex64   = 'die_win64_portable_(?<Version>[\d\.]+).zip$'
+    $regex32   = '/die_win32_portable_(?<Version>[\d\.]+).zip$'
+    $regex64   = '/die_win64_portable_(?<Version>[\d\.]+).zip$'
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url32 = $download_page.links | ? href -match $regex32
-    $url64 = $download_page.links | ? href -match $regex64
+	$url32 = $download_page.links | ? href -match $regex32 | Select-Object -First 1
+    $url64 = $download_page.links | ? href -match $regex64 | Select-Object -First 1
 
     return @{
         Version = $matches.Version
-        URL32   = 'https://github.com' + $url32.href
-        URL64   = 'https://github.com' + $url64.href
+        URL32   = $url32.href
+        URL64   = $url64.href
     }
 }
 
