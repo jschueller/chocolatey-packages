@@ -54,7 +54,7 @@ Little System Cleaner includes the following tools:
 ]]></description>
   <releaseNotes>https://www.little-apps.com/little-system-cleaner/history</releaseNotes>
   <dependencies>
-    <dependency id="autohotkey.install" version="1.1.30.03" />
+    <dependency id="autohotkey.portable" version="1.1.30.03" />
   </dependencies>
   </metadata>
   <files>
