@@ -1,5 +1,10 @@
 ﻿import-module au
 
+function global:au_BeforeUpdate {    
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
+}
+
 function global:au_GetLatest {
     $releases = 'https://www.firestormviewer.org/windows-for-open-simulator'
     $regex32  = 'Phoenix-FirestormOS-release-(?<Version>[\d-]+)-\d+_Setup.exe'
@@ -29,4 +34,4 @@ function global:au_SearchReplace {
     }
 }
 
-update
+update -noCheckUrl -checksumFor none
