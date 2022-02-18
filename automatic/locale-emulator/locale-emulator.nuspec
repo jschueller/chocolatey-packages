@@ -25,7 +25,7 @@
 ]]></description>
     <releaseNotes>https://github.com/xupefei/Locale-Emulator/releases</releaseNotes>
     <dependencies>
-      <dependency id="autohotkey.install" version="1.1.30" />
+      <dependency id="autohotkey.portable" version="1.1.30" />
     </dependencies>
   </metadata>
   <files>
