@@ -3,8 +3,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  destination   = "$toolsDir"
-  file          = "$toolsDir\kid3-3.8.7-win32.zip"
+  destination   = "$toolsDir"  
   file64        = "$toolsDir\kid3-3.8.7-win32-x64.zip"  
 }
 
