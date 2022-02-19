@@ -1,6 +1,9 @@
 ﻿import-module au
 
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -NoSuffix -Purge
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
+}
 
 function global:au_GetLatest {
     $github     = 'https://github.com/'
@@ -36,5 +39,5 @@ function global:au_SearchReplace {
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-    update -ChecksumFor 64
+    update -ChecksumFor none
 }
