@@ -4,14 +4,14 @@ import-module au
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $github_repository = "Pkcs11Admin/Pkcs11Admin"
-    $releases          = "https://github.com/" + $github_repository + "/releases/latest"
+    $github_repository = 'Pkcs11Admin/Pkcs11Admin'
+    $releases          = 'https://github.com/' + $github_repository + '/releases/latest'
     $regex             = 'Pkcs11Admin-(?<Version>[\d\.]+).zip$'
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $url = $download_page.links | ? href -match $regex
 
-    return @{ Version = $matches.Version ; URL32 = "https://github.com" + $url.href }
+    return @{ Version = $matches.Version ; URL32 = 'https://github.com' + $url.href }
 }
 
 function global:au_SearchReplace {
@@ -26,7 +26,7 @@ function global:au_SearchReplace {
 
         "tools\chocolateyinstall.ps1" = @{
           "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\)(.*)`"" = "`${1}$($Latest.FileName32)`""
-          "([$]toolsDir `"Pkcs11Admin-)[\d\.]+(\\)"    = "`${1}$($Latest.Version)`${2}"
+          "(`"Pkcs11Admin-)[\d\.]+(\\)"    = "`${1}$($Latest.Version)`${2}"
         }
 
         "tools\chocolateyuninstall.ps1" = @{
@@ -35,6 +35,4 @@ function global:au_SearchReplace {
     }
 }
 
-if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-    update -ChecksumFor none
-}
+update -ChecksumFor none
