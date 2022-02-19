@@ -14,9 +14,9 @@
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>http://files.salome-platform.org/Salome/Salome9.4.0/src9.4.0.tar.gz</projectSourceUrl>
-    <docsUrl>https://www.salome-platform.org/user-section/documentation/current-release</docsUrl>
-    <mailingListUrl>https://www.salome-platform.org/forum</mailingListUrl>
-    <bugTrackerUrl>https://www.salome-platform.org/service-and-support</bugTrackerUrl>
+    <!--<docsUrl>https://www.salome-platform.org/user-section/documentation/current-release</docsUrl>-->
+    <!--<mailingListUrl>https://www.salome-platform.org/forum</mailingListUrl>-->
+    <!--<bugTrackerUrl>https://www.salome-platform.org/service-and-support</bugTrackerUrl>-->
     <tags>salome numerical simulation processing</tags>
     <summary>SALOME is an open-source software that provides a generic Pre- and Post-Processing platform for numerical simulation.</summary>
     <description><![CDATA[## What is SALOME
