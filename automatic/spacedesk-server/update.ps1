@@ -2,7 +2,8 @@
 
 function global:au_GetLatest {
     $releases = 'https://spacedesk.net'
-    $regexVersion = 'spacedesk DRIVER( Beta)?( III)?( RC)? v(?<Version>[\d\.]+)\</td\>'
+    //$regexVersion = 'spacedesk DRIVER( Beta)?( III)?( RC)? v(?<Version>[\d\.]+)\</td\>'
+    $regexVersion = 'msi version: (?<Version>[\d\.]+)\</span\>'
 
     <# $regex_Win_10_64  = 'spacedesk_driver_Win_10_64_v\d+_BETA.msi'
     $regex_Win_10_32  = 'spacedesk_driver_Win_10_32_v\d+_BETA.msi'
