@@ -4,8 +4,8 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
-  url          = 'https://binaryfortressdownloads.com/Download/BFSFiles/109/HashToolsSetup-4.2.exe'
-  checksum     = 'AE52104E9C51D38A05416BC03D6F7AA4EB6736200259A10012D4D2D23B829883'
+  url          = 'https://binaryfortressdownloads.com/Download/BFSFiles/109/HashToolsSetup-4.4.exe'
+  checksum     = '417706f2232f33238c471049cb66081df65c6c8f7a478720977c5cc1c5addd2c'
   checksumType = 'sha256'
   
   silentArgs   = '/VERYSILENT /SILENT /SUPPRESSMSGBOXES /NORESTART /SP- /components=""'
