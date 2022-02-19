@@ -4,7 +4,8 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
     $releases = 'https://github.com/mgefvert/Cronical/releases/latest'
-    $regex    = ">v(?<Version>[\d\.]+)<"
+    #$regex    = ">v(?<Version>[\d\.]+)<"
+    $regex    = "/Cronical/tree/v(?<Version>[\d\.]+)"
 
     (Invoke-WebRequest -Uri $releases) -match $regex | Out-Null
 
