@@ -43,8 +43,7 @@ A showcase of what LuxCoreRender users have been able to achieve. A special than
 ]]></description>
     <releaseNotes>https://github.com/LuxCoreRender/LuxCore/releases</releaseNotes>
   </metadata>
-  <files>
-    <file src="legal\**" target="legal" />
+  <files>    
     <file src="tools\**" target="tools" />
   </files>
 </package>
