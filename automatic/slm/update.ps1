@@ -11,7 +11,7 @@ function global:au_GetLatest {
     }
     
     return @{
-        Version = $matches.version
+        Version = $version
         URL32   = 'https://download.softros.com/SoftrosLANMessengerSetup.msi'
     }
 }
