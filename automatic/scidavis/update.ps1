@@ -4,14 +4,17 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
     $releases = 'https://sourceforge.net/projects/scidavis'
-    $regex    = 'scidavis.(?<Version>(?<VersionMajor>[\d]+)\.(?<VersionMid>[\d]+)\.[\d]+)-win-dist.msi'
+    #<a href="/projects/scidavis/files/latest/download" title="Download scidavis.2.7-win-dist.msi from SourceForge  - 96.8 MB" class="button download big-text green ">
+    #https://nav.dl.sourceforge.net/project/scidavis/SciDAVis/2/2.7/scidavis.2.7-win-dist.msi
+    #https://downloads.sourceforge.net/project/scidavis/SciDAVis/2/2.7/scidavis.2.7-win-dist.msi
+    $regex    = 'scidavis.(?<Version>(?<VersionMajor>[\d]+)\.(?<VersionMid>[\d]+)(\.[\d]+)?)-win-dist.msi'
 
     (Invoke-WebRequest -Uri $releases).RawContent -match $regex | Out-Null
     $version = $matches.Version
 
     return @{
       Version = $version
-      URL32   = Get-RedirectedUrl $('https://downloads.sourceforge.net/project/scidavis/SciDAVis/' + $matches.VersionMajor + '/' + $matches.VersionMajor + '.' + $matches.VersionMid + '/' + $matches.0)
+      URL32   = 'https://downloads.sourceforge.net/project/scidavis/SciDAVis/' + $matches.VersionMajor + '/' + $matches.VersionMajor + '.' + $matches.VersionMid + '/' + $matches.0
     }
 }
 
