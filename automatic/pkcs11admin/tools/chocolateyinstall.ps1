@@ -8,7 +8,7 @@ Write-Host "pkcs11admin is going to be installed in '$installDir'"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$installDir"
-  file        = "$toolsDir\Pkcs11Admin-0.5.0.zip"
+  file        = "$toolsDir\Pkcs11Admin-0.6.0.zip"
 }
 
 Get-ChocolateyUnzip @packageArgs
@@ -18,7 +18,7 @@ Remove-Item -Path $packageArgs.file
 # Shortcut parameters
 $OSArchitectureWidth = Get-OSArchitectureWidth
 $sparams = @{
-  targetPath = Join-Path $installDir "Pkcs11Admin-0.5.0\Pkcs11Admin-x${OSArchitectureWidth}.exe"
+  targetPath = Join-Path $installDir "Pkcs11Admin-0.6.0\Pkcs11Admin-x${OSArchitectureWidth}.exe"
 }
 
 # Install start menu shortcut
