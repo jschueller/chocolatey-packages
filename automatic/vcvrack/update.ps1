@@ -6,8 +6,9 @@ import-module au
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $releases = 'https://vcvrack.com/Rack.html'
-    $regex    = 'Rack-(?<Version>[\d\.]+)-win.exe'
+    #$releases = 'https://vcvrack.com/Rack.html'
+    $releases = 'https://vcvrack.com/Rack'    
+    $regex    = 'RackFree-(?<Version>[\d\.]+)-win.exe'
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing	
 	$url = $download_page.links | ? href -match $regex
@@ -29,6 +30,4 @@ function global:au_SearchReplace {
     }
 }
 
-if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-    update -ChecksumFor none
-}
+update -ChecksumFor none
