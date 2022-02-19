@@ -7,7 +7,7 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
     $releases = Get-RedirectedUrl 'https://www.binaryfortress.com/Data/Download/?package=hashtools&log=100'
-    $regex    = 'HashToolsSetup-(?<Version>[\d.]+)(?<VersionLetter>[a-z]+).exe$'
+    $regex    = 'HashToolsSetup-(?<Version>[\d.]+)(?<VersionLetter>[a-z]+)?.exe$'
 
     $releases -match $regex | Out-Null
     $version = $matches.Version
