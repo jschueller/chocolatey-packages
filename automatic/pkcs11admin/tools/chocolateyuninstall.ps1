@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-Uninstall-ChocolateyZipPackage $env:ChocolateyPackageName 'Pkcs11Admin-0.5.0.zip'
+Uninstall-ChocolateyZipPackage $env:ChocolateyPackageName Pkcs11Admin-0.6.0.zip'
 $link = "Pkcs11Admin.lnk"
 
 # Remove start menu shortcut
