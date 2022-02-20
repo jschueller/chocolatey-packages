@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
     
-   x64: https://managedway.dl.sourceforge.net/project/kid3/kid3/3.8.7/kid3-3.8.7-win32-x64.zip
+   x64: https://versaweb.dl.sourceforge.net/project/kid3/kid3/3.9.1/kid3-3.9.1-win32-x64.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
-   checksum type: sha256 
-   checksum64: 54CEBF09A4C0C7CED90CF2AE9B339141CA68EB51C7795B533C7F6ECA365EEE48
+   checksum type: sha256
+   checksum64: 5fa5773ccf057f64e83f4e174176880b795695020d1583dfb2078f238f042184
  
 File 'LICENSE.txt' is obtained from:
    https://sourceforge.net/p/kid3/code/ci/master/tree/LICENSE
