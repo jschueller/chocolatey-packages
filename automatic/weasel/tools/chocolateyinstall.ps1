@@ -1,10 +1,16 @@
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$silentArgs = '/S'
+
+$pp = Get-PackageParameters
+
+# /T - install as a Traditional Chinese IME (zh_TW locale)
+if ($pp['T'] -eq 'true') { $silentArgs += ' /T' }
 
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   file        = "$toolsDir\weasel-0.14.3.0-installer.exe"
-  silentArgs  = "/S"
+  silentArgs  = "$silentArgs"
 }
 
 Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyinstall.ahk`""
