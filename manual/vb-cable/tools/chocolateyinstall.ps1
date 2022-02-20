@@ -12,7 +12,15 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-# Don't create shims for executables
+$packageArgs = @{
+  packageName     = $env:ChocolateyPackageName  
+  file            = "$toolsDir\VBCABLE_Setup.exe"
+  file64          = "$toolsDir\VBCABLE_Setup_x64.exe"
+  silentArgs      = '-i -h'
+}
+Install-ChocolateyInstallPackage @packageArgs
+
+<# # Don't create shims for executables
 $files = Get-ChildItem "$toolsDir" -Recurse -Include *.exe
 foreach ($file in $files) {
   New-Item "$file.ignore" -type file -force | Out-Null
@@ -25,4 +33,4 @@ if ((([environment]::OSVersion.version.major) -eq 6) -And (([environment]::OSVer
 }
 
 $rundll = Join-Path (Join-Path $Env:SystemRoot "System32") "rundll32.exe"
-Start-ChocolateyProcessAsAdmin "advpack.dll,LaunchINFSectionEx $inf,,,4" "$rundll"
+Start-ChocolateyProcessAsAdmin "advpack.dll,LaunchINFSectionEx $inf,,,4" "$rundll" #>
