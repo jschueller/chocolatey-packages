@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>weasel</id>
-    <version>0.14.3.0</version>
+    <version>0.14.3.20220220</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/weasel</packageSourceUrl>
     <owners>chtof</owners>
     <title>Weasel</title>
@@ -21,6 +21,15 @@
     <summary>[[Summary]]</summary>
     <description><![CDATA[
 Open source technology based on Zhongzhou rhyme input method engine/Rime Input Method Engine.
+
+### Package Specific
+#### Package Parameters
+The following package parameter can be set:
+
+ * `/T` - install as a Traditional Chinese IME (zh_TW locale)
+ 
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/T'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 ]]></description>
     <releaseNotes>https://github.com/rime/weasel/releases</releaseNotes>
     <dependencies>
