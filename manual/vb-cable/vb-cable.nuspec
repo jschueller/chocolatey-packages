@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vb-cable</id>
-    <version>43.0</version>
+    <version>43.0.0.20220220</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/manual/vb-cable</packageSourceUrl>
     <owners>chtof</owners>
     <title>VB-CABLE Virtual Audio Device</title>
