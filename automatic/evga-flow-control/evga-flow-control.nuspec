@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>evga-flow-control</id>
-    <version>2.0.9</version>
+    <version>2.1.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/evga-flow-control</packageSourceUrl>
     <owners>chtof</owners>
     <title>EVGA Flow Control</title>
@@ -19,8 +19,7 @@
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>evga-flow-control evga flow control CLC liquid cooler firmware</tags>
     <summary>Full control of your EVGA CLC Liquid Cooler.</summary>
-    <description><![CDATA[
-## Features
+    <description><![CDATA[## Features
 - Full control of your EVGA CLC Liquid Cooler
 - Settings saved to firmware
 

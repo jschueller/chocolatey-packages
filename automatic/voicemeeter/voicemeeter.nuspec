@@ -31,4 +31,5 @@ For any professional use, you may pay the recommended license price on the websh
       <dependency id="voicemeeter.install" version="[1.0.8.2]" />
     </dependencies>
   </metadata>
+   <files></files>
 </package>

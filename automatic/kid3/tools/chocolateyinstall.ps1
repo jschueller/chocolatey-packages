@@ -14,7 +14,7 @@ if (Get-OSArchitectureWidth -compare 32) {
 }
 
 Get-ChocolateyUnzip @packageArgs
-Remove-Item $packageArgs.file
+Remove-Item $packageArgs.file64
 
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)

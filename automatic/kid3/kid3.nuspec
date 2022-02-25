@@ -11,9 +11,9 @@
     <projectUrl>https://kid3.sourceforge.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/kid3/kid3.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
-    <licenseUrl>https://sourceforge.net/p/kid3/code/ci/master/tree/LICENSE</licenseUrl>
+    <licenseUrl>https://invent.kde.org/multimedia/kid3/-/raw/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://sourceforge.net/p/kid3/code/ci/master/tree</projectSourceUrl>
+    <projectSourceUrl>https://invent.kde.org/multimedia/kid3/-/tree/master</projectSourceUrl>
     <docsUrl>https://kid3.sourceforge.io/kid3_en.html</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/kid3/discussion</mailingListUrl>
     <bugTrackerUrl>https://sourceforge.net/p/kid3/_list/tickets</bugTrackerUrl>
