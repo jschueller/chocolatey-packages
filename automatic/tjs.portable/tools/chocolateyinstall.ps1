@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$toolsDir"  
 
-  url64          = 'https://netcologne.dl.sourceforge.net/project/jasperstudio/JaspersoftStudio-6.18.1/TIB_js-studiocomm_6.18.1_windows_x86_64.zip'
-  checksum64     = 'ce0a00a4c8e608650d42e74bf62a8afcada037139f9aaf085eeb5ab7c340e2e2'
+  url64          = 'https://netcologne.dl.sourceforge.net/project/jasperstudio/JaspersoftStudio-6.19.0/TIB_js-studiocomm_6.19.0_windows_x86_64.zip'
+  checksum64     = '9a9589d67c0c5cd6c193207566e5f9a853cbaab57e8a3af23bb3adea5f33db05'
   checksumType64 = 'sha256'  
 }
 

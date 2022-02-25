@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
-  url          = 'https://github.com/marktext/marktext/releases/download/v0.16.3/marktext-setup.exe'
-  checksum     = '078884adf9f5bf02d02580ea9af0f04b3b7ae471aebb276d81bc7ac78e97e5af'
+  url          = 'https://github.com/marktext/marktext/releases/download/v0.17.0/marktext-setup.exe'
+  checksum     = '18819048c06775a8b8217edddb81a3619570869de3e41ec94626c9bb18e0881c'
   checksumType = 'sha256'
   
   silentArgs   = "/S"
