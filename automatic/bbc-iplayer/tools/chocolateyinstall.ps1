@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   destination   = "$toolsDir"
 
-  url           = 'https://static.files.bbci.co.uk/iplayer-pc-download-app/releases/win32-x64/BBCiPlayerDownloadsSetup-2.13.6.exe'
-  checksum      = 'c854fef30996a106824baf2120d7d38fa0d171c05dbf6b9a624db20fb784aacf'
+  url           = 'https://static.files.bbci.co.uk/iplayer-pc-download-app/releases/win32-x64/BBCiPlayerDownloadsSetup-2.13.7.exe'
+  checksum      = 'ee81646a121f692c259912c9ebd442cb8ccb0d0fbc0596ed314a50f431a9d602'
   checksumType  = 'sha256'
 }
 
@@ -16,7 +16,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   destination   = "$toolsDir"
 
-  file          = "$toolsDir\bbciplayerdownloads-2.13.6-full.nupkg" 
+  file          = "$toolsDir\bbciplayerdownloads-2.13.7-full.nupkg" 
 }
 
 Install-ChocolateyZipPackage @packageArgs
