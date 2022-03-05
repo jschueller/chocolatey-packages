@@ -17,7 +17,7 @@ foreach ($file in 'python.exe', 'pythonw.exe') {
 Get-ChocolateyUnzip @packageArgs
 Remove-Item $packageArgs.file | Out-Null
 
-$launchy_Exe = (Get-ChildItem -Recurse Launchy.exe )
+$launchy_Exe = (Get-ChildItem "$toolsDir" -Recurse Launchy.exe )
 
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
