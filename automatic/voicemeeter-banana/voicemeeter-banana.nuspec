@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>voicemeeter-banana</id>
+    <version>2.0.6.2</version>
+    <title>Voicemeeter Banana Advanced Mixer</title>
+    <authors>Vincent Burel</authors>
+    <owners>chtof</owners>
+    <licenseUrl>https://www.vb-audio.com/Services/licensing.htm</licenseUrl>
+    <projectUrl>https://vb-audio.com/Voicemeeter/banana.htm</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/voicemeeter-banana/voicemeeter-banana.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[__Voicemeeter Banana__, The Advanced Virtual Audio Device Mixer For Windows !
+
+For first use, it's highly recommended to follow user manual step by step, especially step ZERO of the [documentation](https://vb-audio.com/Voicemeeter/banana.htm#Documentation).
+
+## Licensing
+Voicemeeter Banana is distributed as [Donationware](https://www.vb-audio.com/Voicemeeter/Donationware.htm)!
+
+For END USER, Voicemeeter Banana is free to use! You pay what you want when you want if your find it useful. Thanks for your participation!
+
+For Volume licensing / special deals, especially for company deployment or commercial distribution, you may contact us to get quotation / agreement. [Get more info...](https://www.vb-audio.com/Services/licensing.htm)
+
+![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/voicemeeter-banana/screenshot.png)
+]]></description>
+    <summary>Voicemeeter Banana is an Advanced Audio Mixer Application endowed with Virtual Audio Device used as Virtual I/O to mix and manage any audio sources from or to any audio devices or applications.</summary>
+    <copyright>Copyright V.Burel ©1998-2019. All rights reserved.</copyright>
+    <tags>voicemeeter banana advanced audio mixer application</tags>
+    <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/voicemeeter-banana</packageSourceUrl>
+    <docsUrl>https://vb-audio.com/Voicemeeter/banana.htm#Documentation</docsUrl>
+    <dependencies>
+      <dependency id="voicemeeter-banana.install" version="[2.0.6.2]" />
+    </dependencies>
+  </metadata>   
+  <files></files>
+</package>
