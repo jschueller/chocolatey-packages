@@ -4,7 +4,7 @@ $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
   url          = 'https://www.poly.com/content/dam/www/software/PlantronicsHubInstaller.exe'
-  checksum     = 'fe693ddd25f995db6e7c6b6cbf956317452c58aa23b562342222f000e0dc4a56'
+  checksum     = '62d7296adf04691eb55611dead1f5ef1d8037b685718721848169fc9b69fb841'
   checksumType = 'sha256'
 
   silentArgs   = '/install /quiet /norestart'
