@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop';
-$toolsDir   =	 "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$toolsDir =	"$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $PackageParameters = Get-PackageParameters
 
 ### PARAMETERS
@@ -12,8 +12,10 @@ If ($PackageParameters.InstallDir) {
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = "$installDir"
-  url            = 'https://github.com/mifi/lossless-cut/releases/download/v3.43.0/LosslessCut-win.zip'
-  checksum       = 'c5df41dac8d792215e75663f29be7c14410ef7e115bb2648ed5d4214aa7f00ec'
+  # url            = 'https://github.com/mifi/lossless-cut/releases/download/v3.43.0/LosslessCut-win.zip'
+  url64          = 'https://github.com/mifi/lossless-cut/releases/download/v3.44.0/LosslessCut-win-x64.zip'
+  # checksum       = 'c5df41dac8d792215e75663f29be7c14410ef7e115bb2648ed5d4214aa7f00ec'
+  checksum64     = 'd405d701ddea11aaee4daf7a5ba8f104c7e41194d4c32c47f827b0671a80fdbd'
   checksumType   = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
