@@ -9,7 +9,7 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-foreach ($file in 'embree3.dll', 'OpenImageIO.dll', 'tbb.dll'){
+ForEach ($file in 'embree3.dll', 'OpenImageIO_LuxCore.dll', 'tbb.dll'){
     if (-Not (Test-Path ${env:SystemRoot}\System32\$file -PathType Leaf)){
     Copy-Item $toolsDir\luxcorerender-v2.6-win64-sdk\lib\$file ${env:SystemRoot}\System32
     }
