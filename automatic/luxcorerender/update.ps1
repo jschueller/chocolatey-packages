@@ -1,8 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-function global:au_BeforeUpdate {
-    Get-RemoteFiles -NoSuffix -Purge
+function global:au_BeforeUpdate {    
     $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
 }
 
