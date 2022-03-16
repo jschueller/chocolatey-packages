@@ -44,8 +44,7 @@ Support GFM code fense, highlight by prismjs.
 ]]></description>
     <releaseNotes>https://github.com/marktext/marktext/releases</releaseNotes>
   </metadata>
-  <files>
-    <file src="legal\**" target="legal" />
+  <files>    
     <file src="tools\**" target="tools" />
   </files>
 </package>
