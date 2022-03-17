@@ -2,31 +2,26 @@ $ErrorActionPreference = 'Stop'
 Import-Module au
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-[Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+# [Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 
 function global:au_BeforeUpdate {
     $Latest.ChecksumType32 = 'sha256'
     $Latest.Checksum32     = Get-RemoteChecksum $Latest.URL32 -Algorithm $Latest.ChecksumType32
 }
 
-function global:au_GetLatest {
-  # $releases = 'https://www.poly.com/us/en/support/downloads-apps/hub-desktop'
-  # $regex    = 'Version (?<Version>[\d\.]+)<'
-
-  # (Invoke-WebRequest -Uri $releases -UseBasicParsing).Content -match $regex | Out-Null
-
+function global:au_GetLatest {  
   $etag = GetETagIfChanged -uri "https://www.poly.com/content/dam/www/software/PlantronicsHubInstaller.exe"
 
-    if ($etag) {        
-        $result = GetResultInformation "https://www.poly.com/content/dam/www/software/PlantronicsHubInstaller.exe"
-        $result["ETAG"] = $etag
+  if ($etag) {        
+      $result = GetResultInformation "https://www.poly.com/content/dam/www/software/PlantronicsHubInstaller.exe"
+      $result["ETAG"] = $etag
+  }
+  else {        
+    $result = @{
+      URL32   = 'https://www.poly.com/content/dam/www/software/PlantronicsHubInstaller.exe'
+      Version = Get-Content "$PSScriptRoot\info" -Encoding UTF8 | select -First 1 | % { $_ -split '\|' } | select -Last 1
     }
-    else {        
-        $result = @{
-            URL32   = 'https://www.poly.com/content/dam/www/software/PlantronicsHubInstaller.exe'
-            Version = Get-Content "$PSScriptRoot\info" -Encoding UTF8 | select -First 1 | % { $_ -split '\|' } | select -Last 1
-        }
-    }	
+  }	
 }
 
 function global:au_SearchReplace {
@@ -49,8 +44,8 @@ function GetResultInformation([string]$url32) {
   $result = @{
     URL32          = $url32    
     Version        = (Get-Item $dest).VersionInfo.FileVersion.Trim()
-    Checksum       = Get-FileHash $dest -Algorithm SHA512 | % Hash    
-    ChecksumType32 = 'sha512'
+    Checksum       = Get-FileHash $dest -Algorithm SHA256 | % Hash    
+    ChecksumType32 = 'sha256'
   }  
   Remove-Item -Force $dest
   return $result
