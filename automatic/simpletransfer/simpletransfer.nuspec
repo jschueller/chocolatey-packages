@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>simpletransfer</id>
-    <version>2.2</version>
+    <version>3.0.3</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/simpletransfer</packageSourceUrl>
     <owners>chtof</owners>
     <title>SimpleTransfer Desktop</title>
@@ -19,8 +19,7 @@
     <bugTrackerUrl>https://rambax.com/support?app=simpletransfer</bugTrackerUrl>
     <tags>simpletransfer transfer photo video iPhone iPad comuter pc mac</tags>
     <summary>SimpleTransfer Desktop app is the free companion app for Simple Transfer to easily connect and transfer your photos and videos on your iOS device.</summary>
-    <description><![CDATA[
-**SimpleTransfer Desktop app is the free companion app for Simple Transfer to easily connect and transfer your photos and videos on your iOS device.**
+    <description><![CDATA[**SimpleTransfer Desktop app is the free companion app for Simple Transfer to easily connect and transfer your photos and videos on your iOS device.**
 
 Simple Transfer is the easiest way of transferring your Photos and Videos to computer and other iOS devices wirelessly or USB. No need for cable, iTunes or extra softwares on your computer!
 
