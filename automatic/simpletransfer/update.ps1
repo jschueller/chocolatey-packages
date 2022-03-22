@@ -5,9 +5,9 @@ function global:au_GetLatest {
 	$regex    = 'SimpleTransfer Desktop Setup (?<Version>[\d\.]+).exe'
 	
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$download_page.Content -match $regex
+	$download_page.Content -match $regex | Out-Null
 	
-    return @{ Version = $matches.Version ; URL32 = 'https://rambax.com' + $url.href }
+    return @{ Version = $matches.Version ; URL32 = 'https://rambax.com/simpletransfer/desktop/' + ${matches.0} }
 }
 
 function global:au_SearchReplace {
