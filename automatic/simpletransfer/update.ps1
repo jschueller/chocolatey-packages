@@ -7,7 +7,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$download_page.Content -match $regex | Out-Null
 	
-    return @{ Version = $matches.Version ; URL32 = 'https://rambax.com/simpletransfer/desktop/' + ${matches.0} }
+    return @{ Version = $matches.Version ; URL32 = 'https://rambax.com/simpletransfer/desktop/' + [uri]::EscapeDataString($matches.0) }
 }
 
 function global:au_SearchReplace {
