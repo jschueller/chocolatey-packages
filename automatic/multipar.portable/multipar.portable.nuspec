@@ -23,6 +23,10 @@
 
 MultiPar was made as an alternative to QuickPar.  While it looks like a multi-lingual version of QuickPar, there are some good features; Unicode characters, directory-tree, faster repairing, smaller recovery files, batch scripting, and so on.
 
+## Warning
+Some versions of Multipar can't be approved as Chocolatey package as Virus Total report a number of "virus" higher than the threshold defined by Chocolatey Team.
+For more details, see: https://github.com/Yutaka-Sawada/MultiPar/issues/61
+
 ## Features
 MultiPar supports both PAR 1.0 and PAR 2.0 specifications.
 
