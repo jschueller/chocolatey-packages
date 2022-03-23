@@ -14,7 +14,7 @@
     <licenseUrl>https://github.com/botpress/botpress/blob/master/README.md#license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/botpress/botpress</projectSourceUrl>
-    <docsUrl>https://botpress.io/docs/</docsUrl>
+    <!-- <docsUrl>https://botpress.io/docs/</docsUrl> -->
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/botpress/botpress/issues</bugTrackerUrl>
     <tags>botpress chat bot</tags>
