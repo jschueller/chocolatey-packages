@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>camotics</id>
+    <version>1.2.0</version>
+    <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/camotics</packageSourceUrl>
+    <owners>chtof</owners>
+    <title>CAMotics</title>
+    <authors>CAMotics Team</authors>
+    <projectUrl>https://camotics.org</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/camotics/camotics.png</iconUrl>
+    <copyright>CAMotics is maintained by Cauldron Development LLC.</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/CauldronDevelopmentLLC/CAMotics</projectSourceUrl>
+    <docsUrl>https://camotics.org/manual.html</docsUrl>
+    <mailingListUrl>http://groups.google.com/group/camotics-announcements/boxsubscribe</mailingListUrl>
+    <bugTrackerUrl>https://github.com/CauldronDevelopmentLLC/CAMotics/issues</bugTrackerUrl>
+    <tags>camotics simulate simulation computing 3-axis GCode CNC 3D</tags>
+    <summary>With CAMotics, you can simulate 3-axis GCode programs for CNCs and visualize the results in 3D.</summary>
+    <description><![CDATA[
+## Features
+With CAMotics, you can simulate 3-axis GCode programs for CNCs and visualize the results in 3D. CAMotics runs on Linux, OS-X or Windows. It's fast, easy to use and best of all Open-Source and free.
+
+With the power to simulate your CNC tool paths you will avoid dangerous and expensive mistakes. By looking at the built-in examples and using the online documentation you'll be running your own simulations in no time. And, if you need more help, we'll be happy to answer your questions via the discussion group.
+
+Would you start cutting without measuring first? Then why would you run a CNC program with out simulating? CAMotics will save you time and money and open up a world of creative possibilities by allowing you to rapidly visualize and improve upon designs without wasting materials or breaking tools. If you find CAMotics useful, consider donating some money, otherwise it's totally free so go ahead and download CAMotics now.
+
+![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/camotics/screenshot.png)
+]]></description>
+    <releaseNotes>https://github.com/CauldronDevelopmentLLC/CAMotics/blob/master/CHANGELOG.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
