@@ -6,11 +6,11 @@ $packageArgs = @{
   unzipLocation  = "$toolsDir"
 
   url            = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio_portable.zip'
-  checksum       = '42ce7315df9de7f04a6c8530fbde125028a5aa2a832b4dde78e5cf8a54edadaa'
+  checksum       = 'bbcd4c60ab367c5c65b994ee56fa6bc7252105c1755db3207f537ac6f727b722'
   checksumType   = 'sha256'
 
   url64          = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio64_portable.zip'
-  checksum64     = 'd0b97aecaea235941d76e7c0d330f2daf4bc03af1f70e89de10737dab8ac8064'
+  checksum64     = '1ebe5148863c07449094b1a0e1d5f738dfc8f455503847c09867f64f30a40795'
   checksumType64 = 'sha256'
 }
 
