@@ -5,7 +5,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
     $releases     = 'http://www.keyferret.com/get'
     $regexVersion = 'title="Version (?<Version>[\d\.]+)"'
-    $regexUrl     = '(?<Url>http://www.keyferret.com/download/[\d\.]+/)'
+    $regexUrl     = '(?<Url>https://(www.)?keyferret.com/download/[\d\.]+/)'
 
     $download_page = Invoke-WebRequest -Uri $releases
 
