@@ -5,7 +5,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
     $releases     = 'http://www.keyferret.com/get'
     $regexVersion = 'title="Version (?<Version>[\d\.]+)"'
-    $regexUrl     = '(?<Url>http://www.keyferret.com/download/[\d\.]+/)'
+    $regexUrl     = '(?<Url>https://(www.)?keyferret.com/download/[\d\.]+/)'
 
     $download_page = Invoke-WebRequest -Uri $releases
 
@@ -31,7 +31,7 @@ function global:au_SearchReplace {
 
         "tools\chocolateyinstall.ps1" = @{        
           "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\)(.*)`""         = "`$1$($Latest.FileName32)`""
-          "(?i)(^\s*fileFullPath\s*=\s*`"[$]toolsDir\\)(.*)`"" = "`${1}keyferret-setup-$($Latest.FileName32).exe`""
+          "(?i)(^\s*fileFullPath\s*=\s*`"[$]toolsDir\\)(.*)`"" = "`${1}keyferret-setup-$($Latest.Version).exe`""
         }
     }
 }
