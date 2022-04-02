@@ -8,9 +8,14 @@ function global:au_GetLatest {
     $regex             = 'SonarLint.VSIX-(?<Version>[\d\.]+)-2017.vsix$'
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+
     $url = $download_page.links | ? href -match $regex
 
-    return @{ Version = $matches.Version ; URL32 = "https://github.com" + $url.href }
+    if (-Not ($matches.Version)) {
+        exit;
+    } else {
+        return @{ Version = $matches.Version ; URL32 = "https://github.com" + $url.href }
+    }
 }
 
 function global:au_SearchReplace {
