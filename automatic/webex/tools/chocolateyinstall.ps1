@@ -5,11 +5,11 @@ $packageArgs = @{
   filetype      = 'MSI'
 
   url           = 'https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex_x86.msi'
-  checksum      = '0BC78AF8AE53A3C81A6B6BCFB488704941F83F4C48F2F147EE8F96D0A01EA23E'
+  checksum      = 'E548AB00FF2B07C83A0381E3B190490550C053A31200AABA120B282D04A98D29'
   checksumType  = 'sha256'
 
   url64         = 'https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex.msi'
-  checksum64    = 'E98066412C3C79C8F68330406A7CC246C98EA5419FC3CE41BBB88A2969429694'
+  checksum64    = 'D2D824C8FEB8D089CC1D65EAB1AD34DF94F46EF5C3B3F2C2DB458598D2239579'
   checksumType64= 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$env:TEMP\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`" AUTOOC=0"
