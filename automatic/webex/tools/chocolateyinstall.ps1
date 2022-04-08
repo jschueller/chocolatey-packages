@@ -12,7 +12,7 @@ $packageArgs = @{
   checksum64    = 'D2D824C8FEB8D089CC1D65EAB1AD34DF94F46EF5C3B3F2C2DB458598D2239579'
   checksumType64= 'sha256'
 
-  silentArgs    = "/qn /norestart /l*v `"$env:TEMP\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`" AUTOOC=0"
+  silentArgs    = "/qn /norestart /l*v `"$env:TEMP\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`" ALLUSERS=1 AUTOOC=0"
 }
 
 Install-ChocolateyPackage @packageArgs
