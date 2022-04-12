@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
 
-  url           = 'https://rambax.com/simpletransfer/desktop/SimpleTransfer%20Desktop%20Setup%203.2.4.exe'
-  checksum      = '911b77f45e243d8eac2f0aeb2c8fb431970884ee0b4f0f2008d5aa59bed8f387'
+  url           = 'https://rambax.com/simpletransfer/desktop/SimpleTransfer%20Desktop%20Setup%203.2.5.exe'
+  checksum      = '8f0e8f8e6adc270a1233ca9372a31fe5eb492f1a1f8c8d6d19b63f5e90d38605'
   checksumType  = 'sha256'
 
   silentArgs    = '/S'
