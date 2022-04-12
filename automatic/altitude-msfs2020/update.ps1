@@ -11,7 +11,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {    
-    $releases = "https://www.ivao.aero/softdev/beta/altitudebeta.asp"    
+    $releases = "https://www.ivao.aero/softdev/beta/altitudebeta.aspx"    
     $regex = 'target="dl">v(?<Version>[\d\.b]+) Voice'
 
     (Invoke-WebRequest -Uri $releases -UseBasicParsing).RawContent -match $regex | Out-Null
