@@ -4,13 +4,16 @@ import-module au
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $releases = 'http://hugin.sourceforge.net/download'
-    $regex = "https://sourceforge.net/projects/hugin/files/hugin/hugin-[\d\.]+/Hugin-(?<Version>[\d\.]+)-win64.msi/download"
+    #$releases = 'http://hugin.sourceforge.net/download'    
+    #$regex = "https://sourceforge.net/projects/hugin/files/hugin/hugin-[\d\.]+/Hugin-(?<Version>[\d\.]+)-win64.msi/download"
+    $releases ='https://sourceforge.net/projects/hugin/files/hugin/'
+    $regex = "/hugin/hugin-[\d\.]+/Hugin-(?<Version>[\d\.]+)-win64.msi"
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url = $download_page.links | ? href -match $regex
+	#$url = $download_page.links | ? href -match $regex
+    $download_page.RawContent -match $regex | Out-Null
     
-    return @{ Version = $matches.Version ; URL32 = Get-RedirectedURL $url.href }
+    return @{ Version = $matches.Version ; URL32 = Get-RedirectedUrl ("https://sourceforge.net/projects/hugin/files" + $matches.0) }
 }
 
 function global:au_SearchReplace {
