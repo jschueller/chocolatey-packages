@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x64: https://github.com/guilryder/clavier-plus/releases/download/release11.2.0/Clavier.zip
+   x64: https://github.com/guilryder/clavier-plus/releases/download/release11.2.1/Clavier.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: d21b2eceed02603bb8242ba61c5a1007a3ad353ef29068cd46ea34874e71922d
+   checksum64: b843440bb4f04e8e5eff18d72c465a214d5832f8939d4e759c668e095690520c
  
 File 'LICENSE.txt' is obtained from:
    https://www.gnu.org/licenses/gpl-3.0.txt
