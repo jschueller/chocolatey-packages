@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if Ã¢â‚¬Å“ÃŽÂ©Ã¢â‚¬Â doesnÃ¢â‚¬â„¢t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fawkes</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/fawkes</packageSourceUrl>
+    <owners>chtof</owners>
+    <title>Fawkes Software</title>
+    <authors>Shawn Shan, Emily Wenger, Jiayun Zhang, Huiying Li, Haitao Zheng, and Ben Y. Zhao.</authors>
+    <projectUrl>https://sandlab.cs.uchicago.edu/fawkes/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/fawkes/fawkes.png</iconUrl>
+    <copyright>Copyright (c) 2020, SANDLAB, University of Chicago</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/Shawn-Shan/fawkes/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Shawn-Shan/fawkes</projectSourceUrl>
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/Shawn-Shan/fawkes/issues</bugTrackerUrl>
+    <tags>fawkes personal privacy protection protecting image cloaking</tags>
+    <summary>Protecting Personal Privacy against Unauthorized Deep Learning Models.</summary>
+    <description><![CDATA[
+Fawkes is a privacy protection system developed by researchers at [SANDLab](https://sandlab.cs.uchicago.edu/), University of Chicago. For more information about the project, please refer to [the project webpage](https://sandlab.cs.uchicago.edu/fawkes/). Contact: fawkes-team@googlegroups.com.
+
+An academic paper to summarize this work has been published: [Fawkes:
+
+![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/fawkes/screenshot.png)
+]]></description>
+    <releaseNotes>https://sandlab.cs.uchicago.edu/fawkes/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
