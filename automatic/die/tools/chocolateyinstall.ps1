@@ -15,19 +15,14 @@ if(Test-Path $shortcutFilePath) { Remove-Item $shortcutFilePath -ea 0 }
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   destination   = "$toolsDir"
-  file          = "$toolsDir\die_win32_portable_3.03.zip"
-  file64        = "$toolsDir\die_win64_portable_3.03.zip"
+  file          = "$toolsDir\die_win32_portable_3.04.zip"
+  file64        = "$toolsDir\die_win64_portable_3.04.zip"
 }
 
 Get-ChocolateyUnzip @packageArgs
 Remove-Item -Path "$toolsDir\*.zip"
 
-# Install start menu shortcuts
-if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) {
-    $targetPath = [System.IO.Path]::Combine("$toolsDir", 'die_win32_portable', 'die.exe')
-} else {
-    $targetPath = [System.IO.Path]::Combine("$toolsDir", 'die_win64_portable', 'die.exe')
-}
-
+# Install start menu shortcut
+$targetPath = [System.IO.Path]::Combine("$toolsDir", 'die.exe')
 $shortcutFilePath = Join-Path $programs 'Detect It Easy.lnk'
 Install-ChocolateyShortcut -shortcutFilePath $shortcutFilePath -targetPath $targetPath
