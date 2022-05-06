@@ -7,20 +7,20 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: http://www.w1hkj.com/files/fldigi/fldigi-4.1.21_setup.exe
-   x64: http://www.w1hkj.com/files/fldigi/fldigi-4.1.21_setup.exe
+   x32: http://www.w1hkj.com/files/fldigi/fldigi-4.1.22_setup.exe
+   x64: http://www.w1hkj.com/files/fldigi/fldigi-4.1.22_setup.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: F9C3BF963D778236410B49D2CA7885369900EC52D105EFD433BE656DC20C2459
-   checksum64: F9C3BF963D778236410B49D2CA7885369900EC52D105EFD433BE656DC20C2459
+   checksum32: 2D7EA3285BBD7D321A05B7B745A5F772FC6BC7E0CECABF7537AE56B74039D716
+   checksum64: 2D7EA3285BBD7D321A05B7B745A5F772FC6BC7E0CECABF7537AE56B74039D716
  
 Using AU:
  
-   Get-RemoteChecksum http://www.w1hkj.com/files/fldigi/fldigi-4.1.21_setup.exe
+   Get-RemoteChecksum http://www.w1hkj.com/files/fldigi/fldigi-4.1.22_setup.exe
  
 File 'LICENSE.txt' is obtained from:
    https://sourceforge.net/p/fldigi/fldigi/ci/master/tree/COPYING

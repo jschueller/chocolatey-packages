@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://nchc.dl.sourceforge.net/project/uncrustify/uncrustify-0.74.0/uncrustify-0.74.0_f-win32.zip
-   x64: https://cfhcable.dl.sourceforge.net/project/uncrustify/uncrustify-0.74.0/uncrustify-0.74.0_f-win64.zip
+   x32: https://altushost-swe.dl.sourceforge.net/project/uncrustify/uncrustify-0.75.0/uncrustify-0.75.0_f-win32.zip
+   x64: https://deac-ams.dl.sourceforge.net/project/uncrustify/uncrustify-0.75.0/uncrustify-0.75.0_f-win64.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 1CF2E9E6F6D8D6F6B7F493DDC25420243AC12F7AC749519C9B13F941B3B07074
-   checksum64: BB8BA5FA8B4D9F948CAC008A1215FFD72E95CAE5AECBD9AA2B7C9E84B6AFC316
+   checksum32: 52DC04464F31F6C77C2F5324B74ACBD16321B0F2162828EEB09BC8C07D4CB719
+   checksum64: B9FBBFCD7332A980ECC58ACF28D6B9C13BE5887DFCBD4C7F77CD6C6080951057
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/uncrustify/uncrustify/master/COPYING
