@@ -8,13 +8,13 @@
     <owners>chtof</owners>
     <title>GridTracker</title>
     <authors>Stephen Loomis N0TTL and Henry Forte N2VFL</authors>
-    <projectUrl>https://tagloomis.com/grid-tracker</projectUrl>
+    <projectUrl>https://gridtracker.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/gridtracker/gridtracker.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <docsUrl>https://tagloomis.com/docs</docsUrl>
+    <docsUrl>https://gridtracker.org/docs/</docsUrl>
     <mailingListUrl>https://twitter.com/GridTracker</mailingListUrl>
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>gridtracker grid tracker HAM radio amateur</tags>
