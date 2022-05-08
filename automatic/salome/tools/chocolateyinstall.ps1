@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"  
 
 $packageArgs = @{
@@ -11,13 +11,13 @@ $packageArgs = @{
 }
 Install-ChocolateyZipPackage @packageArgs
 
-$packageArgs = @{
+<#$packageArgs = @{
   packageName = $env:ChocolateyPackageName
-  destination = "$toolsDir"
-  file64      = "$toolsDir\SALOME-9.4.0.tar"
+  destination = "$toolsDir"  
+  file64      =  (Get-ChildItem "$toolsDir\SALOME-*.tar").FullName
 }
 Get-ChocolateyUnzip @packageArgs
-Remove-Item $packageArgs.file64
+Remove-Item $packageArgs.file64#>
 
 # Don't create shims for other executables
 $files = Get-ChildItem "$toolsDir" -Recurse -Include *.exe
@@ -28,5 +28,6 @@ foreach ($file in $files) {
 # Install start menu shortcuts
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
 $shortcutFilePath = Join-Path $programs 'SALOME.lnk'
-$targetPath       = Join-Path $toolsDir 'SALOME-9.4.0\run_salome.bat'
+$targetPath = (Get-ChildItem "$toolsDir\SALOME-*\run_salome.bat").FullName
+#$targetPath       = Join-Path $toolsDir 'SALOME-9.4.0\run_salome.bat'
 Install-ChocolateyShortcut -ShortcutFilePath "$shortcutFilePath" -TargetPath "$targetPath"
