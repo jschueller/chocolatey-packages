@@ -1,6 +1,6 @@
 ﻿Import-Module au
 #. ..\..\helpers\GitHub_Helper.ps1
-. GitHub_Helper.ps1
+. .\GitHub_Helper.ps1
 
 function global:au_GetLatest {
     return github_GetInfo -ArgumentList @{
