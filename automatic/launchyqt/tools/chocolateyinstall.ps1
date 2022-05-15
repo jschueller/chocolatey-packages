@@ -1,10 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-# Stop Launchy
-$process = Get-Process Launchy | Out-Null
-If ($process) { $process | Stop-Process }
-
 # Remove previous version
 Get-ChildItem -Directory -Path $toolsDir -Filter Launchy* | Remove-Item -Force -Recurse
 
