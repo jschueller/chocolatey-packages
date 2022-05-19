@@ -2,10 +2,11 @@ function github_GetInfo {
     Param([array]$ArgumentList)    
 
     $debug = 0;
-    $github_url = 'https://github.com'
-    $github_repository_root     = "$github_url" + $ArgumentList.repository
+    $github_url = 'https://github.com/'
+    $github_repository_root     = "$github_url" + $ArgumentList.repository    
     $github_repository_releases = "$github_repository_root" + '/releases/latest'
 
+    $download_page = Invoke-WebRequest -Uri $github_repository_releases -UseBasicParsing
     $url32_path = ($download_page.links | ? href -match $ArgumentList.regex | select -Last 1).href
 
     If ($debug) {
