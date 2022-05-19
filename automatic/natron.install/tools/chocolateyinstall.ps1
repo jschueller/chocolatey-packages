@@ -1,23 +1,24 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
 
-  url64          = 'https://github.com/NatronGitHub/Natron/releases/download/v2.3.15/Natron-2.3.15-Windows-64.exe'
-  checksum64     = '971a54f739da509b078864359028677e024ba400b863c88665889cf19b284318'
+# Remove previous setup
+Remove-Item -Path "$toolsDir\*.zip" -ErrorAction SilentlyContinue
+
+$packageArgs = @{
+  packageName    = $env:ChocolateyPackageName
+  destination    = "$toolsDir"
+
+  url64          = 'https://github.com/NatronGitHub/Natron/releases/download/v2.4.0/Natron-2.4.0-Windows-64.zip'
+  checksum64     = '0f7e6755702d11a25fe8aa946202cd2aae1fe571b2fea19d853fb448971b84a9'
   checksumType64 = 'sha256'
 }
+Install-ChocolateyZipPackage @packageArgs
 
-$NatronDir = "${env:ProgramFiles}\INRIA\Natron-2.3.15"
-
-If ((Test-Path "$NatronDir" -PathType Container) -And ((Get-ChildItem "$NatronDir" | Measure-Object ).Count -eq 1) -And (Test-Path "$NatronDir\NatronSetup.exe" -PathType Leaf)) {
-  Remove-Item -Path "$NatronDir\NatronSetup.exe"
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName  
+  file          = (Get-ChildItem -Recurse "$toolsDir\Natron-*-Windows-64\Setup.exe").fullName
+  silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 }
 
-Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyinstall.ahk`""
-Install-ChocolateyPackage @packageArgs
-
-# Close AutoHotKey
-$autohotkey = Get-Process AutoHotKey -ErrorAction SilentlyContinue
-if ($autohotkey) { $autohotkey | Stop-Process }
+Install-ChocolateyInstallPackage @packageArgs
