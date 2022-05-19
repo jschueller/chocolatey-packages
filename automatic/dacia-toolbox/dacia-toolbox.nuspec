@@ -11,7 +11,7 @@
     <projectUrl>https://dacia.welcome.naviextras.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/dacia-toolbox/dacia-toolbox.png</iconUrl>
     <copyright>© 2011-2019 NNG Software Developing and Commercial Llc. All rights reserved.</copyright>
-    <licenseUrl>https://dacia-toolboxusage.info.naviextras.com/</licenseUrl>
+    <licenseUrl>https://dacia.welcome.naviextras.com/terms_of_site_en.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
     <docsUrl>https://dacia.welcome.naviextras.com/guide_en.html</docsUrl>
