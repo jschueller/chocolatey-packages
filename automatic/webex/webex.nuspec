@@ -50,10 +50,11 @@ Command-line options for installer configuration. See the [official page](https:
 - `/ENABLEOUTLOOKINTEGRATION` When installing Webex App,  you can specify that Webex App will register with Microsoft Outlook for presence integration with Windows using the ENABLEOUTLOOKINTEGRATION property. If you don't specify the property option, the default is that the checkbox in Settings will be grayed out for all users, you must have administration access privileges to change this option.
 - `/INSTALL_ROOT:PATH` Choose a different folder to install the app.
 - `/ALLUSERS` With this option you will install Webex for all users.
+- `/INSTALLWV2` Install Microsoft's WebView2 embedded browser while installing Webex using this parameter. WebView2 will be required for proper operation of Webex beginning in June, 2022. [Learn more about Webview2 and Webex](https://help.webex.com/en-us/article/nzpgci2/Webex-App-%7C-WebView2-requirement)
 
 ### Examples
 `choco install webex --params "/ACCEPT_EULA"`
-`choco install webex --params "/ACCEPT_EULA /DELETEUSERDATA /ALLUSERS"`
+`choco install webex --params "/ACCEPT_EULA /DELETEUSERDATA /ALLUSERS /INSTALLWV2"`
 `choco install webex --params "/EMAIL:acassidy@example.com /INSTALL_ROOT:C:\Program Files /AUTOSTART_WITH_WINDOWS:false"`
 
 ]]></description>
