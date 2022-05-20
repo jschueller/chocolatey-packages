@@ -23,5 +23,5 @@ function global:au_SearchReplace {
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-    update -NoCheckUrl -ChecksumFor 64
+    update -NoCheckUrl -ChecksumFor none
 }
