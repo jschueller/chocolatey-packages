@@ -22,5 +22,5 @@ foreach ($file in $files) {
 $OSArchitectureWidth = Get-OSArchitectureWidth
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
 $shortcutFilePath = Join-Path $programs "Natron.lnk"
-$targetPath = (Get-ChildItem -Recurse "$toolsDir\Natron-*-Windows-x86_${OSArchitectureWidth}bit-no-installer\bin\natron.exe").fullName
+$targetPath = (Get-ChildItem -Recurse "$toolsDir\Natron-*-Windows-x86_${OSArchitectureWidth}*\bin\natron.exe").fullName
 Install-ChocolateyShortcut -shortcutFilePath $shortcutFilePath -targetPath $targetPath
