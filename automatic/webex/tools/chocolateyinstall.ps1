@@ -10,6 +10,7 @@ $sa += if ($pp.EMAIL) { ' EMAIL=' + $pp.EMAIL }
 $sa += if ($pp.ENABLEOUTLOOKINTEGRATION) { ' ENABLEOUTLOOKINTEGRATION=1' }
 $sa += if ($pp.INSTALL_ROOT) { ' INSTALL_ROOT="' + $pp.INSTALL_ROOT + '"' }
 $sa += if ($pp.ALLUSERS) { ' ALLUSERS=1' }
+$sa += if ($pp.INSTALLWV2) { ' INSTALLWV2=1' }
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
