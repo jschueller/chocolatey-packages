@@ -1,10 +1,17 @@
 ﻿import-module au
+. ..\..\helpers\GitHub_Helper.ps1
 
-function global:au_GetLatest {
-    return github_GetInfo -ArgumentList @{
+function global:au_GetLatest {    
+    $data = github_GetInfo -ArgumentList @{
         repository = 'NatronGitHub/Natron'        
-        regex      = 'Natron-(?<Version>[\d\.]+)-Windows-x86_64.zip'
-    }  
+        regex64    = 'Natron-(?<Version>[\d\.]+)-Windows-x86_64.zip'
+    }
+
+    return @{
+        URL32   = $data.URL32
+        URL64   = $data.URL64
+        Version = $data.Version
+    }
 }
 
 function global:au_SearchReplace {
