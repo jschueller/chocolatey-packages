@@ -17,7 +17,7 @@ Install-ChocolateyZipPackage @packageArgs
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName  
-  file          = (Get-ChildItem -Recurse "$toolsDir\Natron-*-Windows-64\Setup.exe").fullName
+  file          = (Get-ChildItem -Recurse "$toolsDir\Natron-*-Windows-*64\Setup.exe").fullName
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 }
 
