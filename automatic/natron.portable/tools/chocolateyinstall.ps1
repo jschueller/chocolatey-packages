@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = "$toolsDir"
 
-  url64          = 'https://github.com/NatronGitHub/Natron/releases/download/v2.3.15/Natron-2.3.15-Windows-64-no-installer.zip'
-  checksum64     = '954df1f1edc9442a315ef0aec6dac0caf3bd58590026fe67a79d779aecbe94e2'
+  url64          = 'https://github.com//NatronGitHub/Natron/releases/download/v2.4.3/Natron-2.4.3-Windows-x86_64.zip'
+  checksum64     = '5bd66ac2da636f89f1d9e7622f6e25010d67853aa8244ea7e3e1d9bbbd790c40'
   checksumType64 = 'sha256'
 }
 
