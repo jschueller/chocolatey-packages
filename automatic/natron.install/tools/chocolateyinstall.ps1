@@ -9,8 +9,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   destination    = "$toolsDir"
 
-  url64          = 'https://github.com/NatronGitHub/Natron/releases/download/v2.4.0/Natron-2.4.0-Windows-64.zip'
-  checksum64     = '0f7e6755702d11a25fe8aa946202cd2aae1fe571b2fea19d853fb448971b84a9'
+  url64          = 'https://github.com//NatronGitHub/Natron/releases/download/v2.4.3/Natron-2.4.3-Windows-x86_64.zip'
+  checksum64     = ''
   checksumType64 = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
