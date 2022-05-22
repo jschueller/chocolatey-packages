@@ -1,6 +1,5 @@
 ﻿import-module au
 . ..\..\helpers\GitHub_Helper.ps1
-#. .\GitHub_Helper.ps1
 
 function global:au_GetLatest {  
     $data = github_GetInfo -ArgumentList @{
