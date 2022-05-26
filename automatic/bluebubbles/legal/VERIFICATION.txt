@@ -1,0 +1,22 @@
+VERIFICATION
+ 
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+Package can be verified like this:
+ 
+1. Download:
+ 
+   x32: https://github.com//BlueBubblesApp/bluebubbles-app/releases/download/v1.8.0%2B27/bluebubbles_installer.exe
+   x64: https://github.com//BlueBubblesApp/bluebubbles-app/releases/download/v1.8.0%2B27/bluebubbles_installer.exe
+  
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+ 
+   checksum type: sha256
+   checksum32: 305797C321B907E374764F294B4A5E227CCF0CC419D21C62AA261ADBE7B73851
+   checksum64: 305797C321B907E374764F294B4A5E227CCF0CC419D21C62AA261ADBE7B73851
+ 
+File 'LICENSE.txt' is obtained from:
+   https://raw.githubusercontent.com/BlueBubblesApp/bluebubbles-app/master/LICENSE

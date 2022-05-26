@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>bluebubbles</id>
+    <version>1.8.0</version>
+    <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/bluebubbles</packageSourceUrl>
+    <owners>chtof</owners>
+    <title>BlueBubbles</title>
+    <authors>BlueBubbles team</authors>
+    <projectUrl>https://bluebubbles.app/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/bluebubbles/bluebubbles.png</iconUrl>
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <licenseUrl>https://raw.githubusercontent.com/BlueBubblesApp/bluebubbles-app/v1.8.0%2B27/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/BlueBubblesApp/bluebubbles-app</projectSourceUrl>
+    <docsUrl>https://docs.bluebubbles.app/client/</docsUrl>
+    <mailingListUrl>https://discord.gg/6nrGRHT</mailingListUrl>
+    <bugTrackerUrl>https://github.com/BlueBubblesApp/bluebubbles-app/issues</bugTrackerUrl>
+    <tags>bluebubbles iMessage</tags>
+    <summary>Bringing iMessage to Windows, Linux, and Android.</summary>
+    <description><![CDATA[## Notice
+Please note that BlueBubbles requires a Mac and an Apple ID to function! A macOS VM on Windows or Linux can suffice as well.
+
+## Description
+BlueBubbles is an open-source and cross-platform ecosystem of apps aimed to bring iMessage to Android, Windows, Linux, and the Web! With BlueBubbles, you'll be able to send messages, media, and much more to your friends and family.
+
+## Key Features
+
+- Send & receive texts, media, and location
+- View tapbacks, reactions, stickers, and read/delivered timestamps
+- Create new chats
+- View replies (requires MacOS 11+)
+- Mute or archive conversations
+- Robust theming engine
+- Choose between an iOS or Android-style interface
+- Lots of customizations and options to personalize your experience
+- Full cross-platform support - message across Android, Linux, Windows, the Web, and even macOS!
+
+## Private API Features
+
+- See and send typing indicators
+- Send tapbacks, read receipts, subject messages, messages with effects, and replies (replies require MacOS 11+)
+- Mark chats read on the server Mac
+- Rename group chats
+- Add and remove participants from group chats
+- Private API Features are not enabled by default and require extra configurations. Learn how to set up Private API Features here
+
+## Screenshots
+
+### Chat List
+![Chat List](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/bluebubbles/Chat_List.png)
+
+### Message View
+![Message View](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/bluebubbles/Message_View.png)
+
+###Private API Features
+![Private API Features](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/bluebubbles/Private_API_Features.png)
+
+![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/bluebubbles/screenshot.png)
+]]></description>
+    <releaseNotes>https://github.com/BlueBubblesApp/bluebubbles-app/releases/latest</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
