@@ -35,7 +35,7 @@ BlueBubbles is an open-source and cross-platform ecosystem of apps aimed to brin
 ### Message View
 ![Message View](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/bluebubbles/Message_View.png)
 
-###Private API Features
+### Private API Features
 ![Private API Features](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/bluebubbles/Private_API_Features.png)
 
 ![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/bluebubbles/screenshot.png)
