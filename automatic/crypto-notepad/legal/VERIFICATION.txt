@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//Crypto-Notepad/Crypto-Notepad/releases/download/v1.7.1/Crypto.Notepad.zip
-   x64: https://github.com//Crypto-Notepad/Crypto-Notepad/releases/download/v1.7.1/Crypto.Notepad.zip
+   x32: https://github.com//Crypto-Notepad/Crypto-Notepad/releases/download/v1.7.2/Crypto.Notepad.zip
+   x64: https://github.com//Crypto-Notepad/Crypto-Notepad/releases/download/v1.7.2/Crypto.Notepad.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 7A0436C2B66C2E80C8862ABA330B4545A221472C7E28EF140532A45BBB7CD1CA
-   checksum64: 7A0436C2B66C2E80C8862ABA330B4545A221472C7E28EF140532A45BBB7CD1CA
+   checksum32: D99A92FAAF2E8E20FB9ACFD3CDB1DC1751DE7FB60E9DF28A255519F97542E318
+   checksum64: D99A92FAAF2E8E20FB9ACFD3CDB1DC1751DE7FB60E9DF28A255519F97542E318
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/Crypto-Notepad/Crypto-Notepad/master/LICENSE
