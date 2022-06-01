@@ -3,12 +3,12 @@
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
     
-  url           = 'https://build.openmodelica.org/omc/builds/windows/releases/1.18/1/32bit/OpenModelica-v1.18.1-32bit.exe'
-  checksum      = '8d4329a9c7998dd29982231fa96b984a04d02e4d83b06addbe9d0de2cd91bf07'
+  url           = 'https://build.openmodelica.org/omc/builds/windows/releases/1.19/0/32bit/OpenModelica-v1.19.0-32bit.exe'
+  checksum      = '8482341a616ad8c0c0309ba40c6c4844b92599b58bbd786bbc20bba194cd4fa2'
   checksumType  = 'sha256'
   
-  url64         = 'https://build.openmodelica.org/omc/builds/windows/releases/1.18/1/64bit/OpenModelica-v1.18.1-64bit.exe'
-  checksum64    = 'bc4f81ca3ff2c45569c4f5f24757b0ae84cb1b8ab321b2a08d76e3ead859d34c'
+  url64         = 'https://build.openmodelica.org/omc/builds/windows/releases/1.19/0/64bit/OpenModelica-v1.19.0-64bit.exe'
+  checksum64    = 'c3e0378ba2d8490a16f8a446cbc22304ac95dffe23e064edf3ad86b9d43b8ee5'
   checksumType64= 'sha256'
   
   silentArgs	= '/S'
