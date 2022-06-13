@@ -14,8 +14,13 @@ function global:au_GetLatest {
   $filename = $matches.Filename
 
   $download_page.RawContent -match $regex_version | Out-Null
+
+  # When the fourth segment is already used, it is recommended to add two zeroes (00) to the end of the version. Then when you need to fix, you just increment that number.
+  $versionNbSegment = ($matches.Version.ToCharArray() | Where-Object {$_ -eq '.'} | Measure-Object).Count
+  $version = $matches.Version
+  if ($versionNbSegment -eq 3) { $version += "00" }
   
-  return @{ Version = $matches.Version ; URL32 = 'https://download.vb-audio.com/Download_CABLE/' + $filename }
+  return @{ Version = $version ; URL32 = 'https://download.vb-audio.com/Download_CABLE/' + $filename }
 }
 
 function global:au_SearchReplace {
