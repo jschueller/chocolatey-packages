@@ -4,7 +4,7 @@ $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
   url          = 'https://www.skytopia.com/software/sunsetscreen/SunsetScreen_Setup.exe'
-  checksum     = 'a0e859821b1cdbb173616b821900b2bf3d95387815adf94ea196e4309decae78'
+  checksum     = '2dddbbf41fece57eb9e24269642a10d23a50844bf8a3e2e4617f97ad78acdd3f'
   checksumType = 'sha256'
 
   silentArgs   = '-q'
