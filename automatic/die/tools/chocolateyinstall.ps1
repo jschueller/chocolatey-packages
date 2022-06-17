@@ -15,8 +15,8 @@ if(Test-Path $shortcutFilePath) { Remove-Item $shortcutFilePath -ea 0 }
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   destination   = "$toolsDir"
-  file          = "$toolsDir\die_win32_portable_3.04.zip"
-  file64        = "$toolsDir\die_win64_portable_3.04.zip"
+  file          = "$toolsDir\die_win32_portable_3.05.zip"
+  file64        = "$toolsDir\die_win64_portable_3.05.zip"
 }
 
 Get-ChocolateyUnzip @packageArgs
