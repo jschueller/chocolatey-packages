@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/CorsixTH/CorsixTH</projectSourceUrl>
     <docsUrl>https://github.com/CorsixTH/CorsixTH/wiki</docsUrl>
-    <mailingListUrl>http://forums.corsixth.com</mailingListUrl>
+    <!-- <mailingListUrl>http://forums.corsixth.com</mailingListUrl> -->
     <bugTrackerUrl>https://github.com/CorsixTH/CorsixTH/issues/new</bugTrackerUrl>
     <tags>corsixth.install theme hospital modern reimplementation high resolution</tags>
     <summary>A reimplementation of the 1997 Bullfrog business sim Theme Hospital. As well as faithfully recreating the original, CorsixTH adds support for modern operating systems (Windows, macOS, Linux and BSD), high resolutions and much more.</summary>
