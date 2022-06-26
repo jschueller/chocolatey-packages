@@ -10,7 +10,7 @@ winTitle = Uninstalling Jack
 
 ; Uninstalling Jack
 WinWait, %winTitle%, Welcome to the Jack Uninstallation!, 30
-ControlClick, &Next >, %winTitle%
+ControlClick, &Next, %winTitle%
 
 ; Jack has been successfully uninstalled!
 WinWait, %winTitle%, Jack has been successfully uninstalled!, 30
