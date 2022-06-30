@@ -4,11 +4,11 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
 
   url           = 'https://www.kafkatool.com/download2/offsetexplorer.exe'
-  checksum      = '93813c6625a3549743527c0b9fd1e5037fa9a768a5ac05084fd14b86d7fe044c'
+  checksum      = 'b32ee487c534ba3188bc78f37ea9a0428f5fde399d5acc6b6682372a97231c1a'
   checksumType  = 'sha256'
 
   url64bit      = 'https://www.kafkatool.com/download2/offsetexplorer_64bit.exe'
-  checksum64    = '52b85e7456b1e9f286a7d332d3a1192363baf1ad9b27ecda9efb0f91915cee77'
+  checksum64    = 'f51e3445032ecf2aa7703cd115b456dd36d330bc10593c9b208beda8ea3a1f84'
   checksumType64= 'sha256'
 
   silentArgs    = '-q'
