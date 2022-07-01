@@ -1,12 +1,12 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"  
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$toolsDir"
 
-  url64         = 'https://files.salome-platform.org/Salome/Salome9.8.0/SALOME-9.8.0.zip'
-  checksum64    = '1189685373bbed37cd3e6317ff44beb39d5a42dfb5f3def19adf1b26a706a324'
+  url64         = 'https://files.salome-platform.org/Salome/Salome9.9.0/SALOME-9.9.0.zip'
+  checksum64    = '12d803d7d72056fb8fec9c1df3a02bfebe015d37c1a03e12ee4fcfdc9cc3ca91'
   checksumType64= 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
