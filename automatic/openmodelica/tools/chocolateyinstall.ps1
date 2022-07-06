@@ -8,7 +8,7 @@ $packageArgs = @{
   checksumType  = 'sha256'
   
   url64         = 'https://build.openmodelica.org/omc/builds/windows/releases/1.19/0/64bit/OpenModelica-v1.19.0-64bit.exe'
-  checksum64    = 'c3e0378ba2d8490a16f8a446cbc22304ac95dffe23e064edf3ad86b9d43b8ee5'
+  checksum64    = 'f82cb910bf1f33536493efd0e1676e86b9cc10897861aaf50fe03aa0437beedc'
   checksumType64= 'sha256'
   
   silentArgs	= '/S'
