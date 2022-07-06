@@ -4,7 +4,7 @@ $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
   url          = 'https://cdn.iobit.com/dl/advanced-systemcare-setup.exe'
-  checksum     = 'b58b974557fb32aaf23096c306990523b27080ded6de5d30846246124dad672cdc514ab732bd6a32f030a83f15d49b2e879de8bfb3f7e99d7f18ba150eab2375'
+  checksum     = 'f84c0c87ad94b1cc64999483fc0eb205cac017181fe0512f4302e722a2e6227e0f3a0c2fba750aeec020d3650c6928c90ce776c4daa6dcfc34b19d8cbb966c2b'
   checksumType = 'sha512'
 
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
